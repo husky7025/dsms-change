@@ -1,0 +1,3596 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <link rel="icon" type="image/png" href="data:image/png;base64,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">
+  <base target="_top">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>수업(교체ㆍ보강) 계획서</title>
+  <style>
+    /* ═══════════════════════════════
+       기본 리셋 & 변수
+    ═══════════════════════════════ */
+    :root {
+      --primary: #4f6ef7;
+      --primary-dark: #3a56d4;
+      --primary-light: #eef1ff;
+      --success: #10b981;
+      --success-light: #ecfdf5;
+      --warning: #f59e0b;
+      --purple: #8b5cf6;
+      --gray-50: #f9fafb;
+      --gray-100: #f3f4f6;
+      --gray-200: #e5e7eb;
+      --gray-300: #d1d5db;
+      --gray-400: #9ca3af;
+      --gray-500: #6b7280;
+      --gray-600: #4b5563;
+      --gray-700: #374151;
+      --gray-800: #1f2937;
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 14px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+      background: #f1f3f9;
+      color: var(--gray-800);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ═══════════════════════════════
+       상단 네비게이션
+    ═══════════════════════════════ */
+    .app-nav {
+      background: linear-gradient(135deg, #4f6ef7 0%, #6366f1 100%);
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(79,110,247,0.2);
+    }
+
+    .app-nav .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      user-select: none;
+      transition: opacity 0.2s;
+    }
+    .app-nav .logo-area:hover { opacity: 0.9; }
+    .school-logo-img {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+      background: #ffffff;
+      border-radius: 50%;
+      padding: 2px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      flex-shrink: 0;
+      transition: transform 0.25s ease;
+      vertical-align: middle;
+    }
+    .app-nav .logo-area:hover .school-logo-img {
+      transform: scale(1.1) rotate(6deg);
+    }
+
+    .app-nav h1 { font-size: 16px; font-weight: 800; letter-spacing: -0.3px; }
+    .app-nav .badge-school { background: rgba(255,255,255,0.2); font-size: 11px; padding: 2px 8px; border-radius: 12px; }
+    .nav-actions { display: flex; gap: 8px; }
+
+    /* ═══════════════════════════════
+       대시보드 메인 레이아웃 (좌우 2열)
+    ═══════════════════════════════ */
+    .dashboard-layout {
+      max-width: 1400px;
+      width: 100%;
+      margin: 14px auto;
+      padding: 0 14px;
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      gap: 14px;
+      align-items: start;
+      flex: 1;
+    }
+
+    @media (max-width: 960px) {
+      .dashboard-layout { grid-template-columns: 1fr; }
+    }
+
+    .card {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: 16px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--gray-200);
+      margin-bottom: 12px;
+    }
+    .card:last-child { margin-bottom: 0; }
+
+    .card-title {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--gray-100);
+    }
+
+    .form-group { margin-bottom: 10px; }
+    .form-group:last-child { margin-bottom: 0; }
+
+    label {
+      display: block;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--gray-500);
+      margin-bottom: 4px;
+      letter-spacing: 0.2px;
+    }
+
+    input[type="text"], input[type="date"], select {
+      width: 100%;
+      padding: 8px 10px;
+      border: 1.5px solid var(--gray-200);
+      border-radius: var(--radius-md);
+      font-size: 13px;
+      font-family: inherit;
+      color: var(--gray-800);
+      background: var(--gray-50);
+      transition: all 0.15s;
+      outline: none;
+    }
+
+    input:focus, select:focus {
+      border-color: var(--primary);
+      background: white;
+      box-shadow: 0 0 0 2px rgba(79,110,247,0.1);
+    }
+
+    .input-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+
+    .day-tabs { display: flex; gap: 4px; margin-top: 4px; }
+    .day-tab {
+      flex: 1; padding: 7px 2px;
+      border: 1px solid var(--gray-300);
+      border-radius: var(--radius-sm);
+      background: white; font-size: 12px; font-weight: 700; color: var(--gray-600);
+      cursor: pointer; text-align: center; transition: all 0.15s;
+    }
+    .day-tab.active { background: var(--primary); border-color: var(--primary); color: white; }
+
+    .period-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; margin-top: 4px; }
+    .period-btn {
+      padding: 7px 2px;
+      border: 1px solid var(--gray-300);
+      border-radius: var(--radius-sm);
+      background: white; font-size: 12px; font-weight: 700; color: var(--gray-600);
+      cursor: pointer; text-align: center; transition: all 0.15s;
+    }
+    .period-btn.active { background: var(--primary); border-color: var(--primary); color: white; }
+
+    .mode-toggle-group { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 4px; }
+    .mode-btn {
+      display: flex; align-items: center; justify-content: center; gap: 6px;
+      padding: 9px 8px; border: 1.5px solid var(--gray-200); border-radius: var(--radius-md);
+      font-size: 12px; font-weight: 700; color: var(--gray-600); background: var(--gray-50);
+      cursor: pointer; user-select: none; transition: all 0.15s;
+    }
+    .mode-btn.checked { background: var(--primary-light); border-color: var(--primary); color: var(--primary); }
+    .mode-btn input { display: none; }
+
+    .btn {
+      padding: 8px 14px; border: none; border-radius: var(--radius-md);
+      font-size: 12px; font-weight: 700; font-family: inherit; cursor: pointer;
+      transition: all 0.15s; display: inline-flex; align-items: center; justify-content: center;
+      gap: 5px; white-space: nowrap;
+    }
+    .btn:active { transform: scale(0.98); }
+    .btn-primary { background: var(--primary); color: white; }
+    .btn-primary:hover { background: var(--primary-dark); }
+    .btn-success { background: var(--success); color: white; }
+    .btn-purple  { background: var(--purple); color: white; }
+    .btn-warning { background: var(--warning); color: white; }
+    .btn-white   { background: white; color: var(--gray-700); border: 1px solid var(--gray-300); }
+    .btn-white:hover { background: var(--gray-50); }
+    .btn-sm { padding: 5px 9px; font-size: 11px; border-radius: var(--radius-sm); }
+    .btn-block { width: 100%; padding: 11px; font-size: 14px; }
+
+    .right-panel { display: flex; flex-direction: column; gap: 12px; }
+
+    .placeholder-box {
+      background: white; border-radius: var(--radius-lg); padding: 60px 20px;
+      text-align: center; border: 1.5px dashed var(--gray-300); color: var(--gray-400);
+    }
+    .placeholder-box .icon { font-size: 40px; margin-bottom: 10px; }
+    .placeholder-box p { font-size: 14px; }
+
+    .result-summary-bar {
+      background: white; border-radius: var(--radius-lg); padding: 12px 16px;
+      display: flex; justify-content: space-between; align-items: center;
+      border-left: 4px solid var(--primary); box-shadow: var(--shadow-sm);
+    }
+
+    .table-box { background: white; border-radius: var(--radius-lg); border: 1px solid var(--gray-200); overflow: hidden; box-shadow: var(--shadow-sm); }
+    .compact-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    .compact-table th { background: var(--gray-100); color: var(--gray-700); padding: 8px 12px; text-align: center; font-weight: 700; font-size: 11px; border-bottom: 1px solid var(--gray-200); }
+    .compact-table td { padding: 9px 12px; text-align: center; border-bottom: 1px solid var(--gray-100); color: var(--gray-800); }
+    .compact-table tr:hover td { background: #f8fafc; }
+    .compact-table tr.selected td { background: var(--primary-light); }
+
+    .diff-summary-card { background: #ffffff; border: 1.5px solid #c7d2fe; border-radius: var(--radius-lg); padding: 14px; box-shadow: var(--shadow-sm); display: none; }
+    .diff-summary-card.show { display: block; }
+    .diff-grid { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 10px; margin-top: 10px; }
+    .diff-teacher-box { background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: var(--radius-md); padding: 10px 12px; }
+    .diff-teacher-box .t-name { font-size: 13px; font-weight: 800; color: var(--gray-800); margin-bottom: 4px; }
+    .diff-teacher-box .t-detail { font-size: 12px; color: var(--primary-dark); line-height: 1.5; }
+    .diff-arrow { font-size: 20px; color: var(--primary); text-align: center; font-weight: 800; }
+
+    .confirmation-container {
+      background: white; border-radius: var(--radius-lg); border: 1px solid var(--gray-200);
+      padding: 16px; box-shadow: var(--shadow-sm); display: none;
+    }
+    .confirmation-container.show { display: block; }
+
+    .doc-top-bar {
+      display: flex; justify-content: space-between; align-items: center;
+      margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid var(--gray-200);
+      flex-wrap: wrap; gap: 8px;
+    }
+
+    /* ═══════════════════════════════
+       한컴 HWP 원본 100% 정밀 재현 서식
+    ═══════════════════════════════ */
+    .official-plan-sheet {
+      background: white;
+      padding: 0 15.25mm; /* 학교 양식 실측: 표 179.5mm → 좌우 여백 15.25mm */
+      color: #000;
+      font-family: 'Gulim', '굴림체', 'Malgun Gothic', sans-serif;
+      line-height: 1.2;
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 210mm;
+      margin: 0 auto;
+    }
+
+    .plan-header-box {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      margin-bottom: 5mm;
+    }
+
+    .approval-table {
+      border-collapse: collapse;
+      font-size: 11pt;
+      font-family: 'Gulim', '굴림체', sans-serif;
+      text-align: center;
+      width: 42.8mm; /* 실측: 8.86+17.30+16.64 */
+      height: 21.46mm;
+    }
+    .approval-table th, .approval-table td {
+      border: 1px solid #000;
+      padding: 0;
+      vertical-align: middle;
+    }
+    .approval-table th.side-title {
+      width: 8.86mm;
+      font-size: 12pt;
+      font-weight: normal;
+      line-height: 1.3;
+    }
+    .approval-table th.app-title {
+      height: 6.23mm;
+      font-size: 11pt;
+      font-weight: normal;
+    }
+    .approval-table td.app-box {
+      height: 15.23mm;
+    }
+
+    .plan-doc-title {
+      font-family: 'Batang', '한컴바탕', serif;
+      font-size: 15pt;
+      font-weight: bold;
+      text-align: center;
+      margin: 4mm 0 6mm 0;
+      color: #000;
+    }
+
+    .pdf-form-table {
+      width: 179.5mm; /* 학교 양식 실측 */
+      table-layout: fixed;
+      border-collapse: collapse;
+      font-size: 11pt;
+      font-family: 'Gulim', '굴림체', sans-serif;
+      text-align: center;
+      border: 2px solid #000; /* 화면 미리보기용: 바깥 테두리 굵게 (인쇄 시 0.5mm로 교정) */
+    }
+
+    .pdf-form-table th, .pdf-form-table td {
+      border: 1px solid #000; /* 화면 미리보기용: 안쪽 눈금선 (인쇄 시 0.12mm로 교정) */
+      padding: 0;
+      height: 10.51mm;
+      vertical-align: middle;
+      font-weight: normal;
+    }
+
+    /* 구분 열 좌우 이중선
+       (주의: CSS double은 3px 미만에서 화면에 한 줄로 뭉개지므로,
+        화면에서는 4px로 보여주고 인쇄 시 실측 0.5mm로 교정) */
+    .pdf-form-table th.gubun-cell, .pdf-form-table td.gubun-cell {
+      border-left: 4px double #000;
+      border-right: 4px double #000;
+    }
+
+    /* 결강사유 행 아래 굵은 분리선 (화면 3px, 인쇄 시 실측 0.7mm) */
+    .pdf-form-table tr.top-info-row.reason-row th,
+    .pdf-form-table tr.top-info-row.reason-row td {
+      border-bottom: 3px double #000;
+    }
+
+    .pdf-form-table th.header-bg { font-size: 12pt; }
+    .pdf-form-table th.sub-header { font-weight: bold; }
+    .pdf-form-table tr.top-info-row th,
+    .pdf-form-table tr.top-info-row td { height: 12.50mm; }
+    .pdf-form-table tr.section-header-row th { height: 11.08mm; }
+    .pdf-form-table tr.col-title-row th { height: 17.29mm; }
+    .pdf-form-table tr.data-row td { height: 10.51mm; }
+    .pdf-form-table tr.bottom-note-row td {
+      height: 8.51mm;
+      font-size: 11pt;
+      text-align: left;
+      padding-left: 3mm;
+    }
+
+    .plan-doc-footer-note {
+      font-family: 'Batang', '한컴바탕', serif;
+      font-size: 12pt;
+      margin-top: 4mm;
+      color: #000;
+    }
+
+    /* ═══════════════════════════════
+       모달 & 시간표 테이블
+    ═══════════════════════════════ */
+    .modal-overlay {
+      position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.4); display: none; align-items: center; justify-content: center;
+      z-index: 1000; padding: 16px;
+    }
+    .modal-overlay.show { display: flex; }
+    .modal-card { background: white; border-radius: var(--radius-lg); max-width: 800px; width: 100%; max-height: 90vh; overflow-y: auto; padding: 18px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+    .modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+    .modal-header h3 { font-size: 15px; font-weight: 800; }
+    .modal-close { background: none; border: none; font-size: 18px; cursor: pointer; color: var(--gray-400); }
+
+    .tt-wrap { overflow-x: auto; border: 1px solid var(--gray-300); background: white; }
+    .tt-table { width: 100%; border-collapse: collapse; font-size: 10px; text-align: center; }
+    .tt-table th { background: var(--gray-700); color: white; padding: 4px 2px; }
+    .tt-table td { border-bottom: 1px solid var(--gray-200); padding: 4px 2px; height: 38px; vertical-align: middle; }
+    .tt-table td:first-child { background: var(--gray-100); font-weight: 700; width: 34px; }
+    .tt-table td.highlight-changed { background: #fef08a; font-weight: bold; color: #b91c1c; }
+
+    .subj-name { font-weight: 700; display: block; font-size: 10px; }
+    .room-name { font-size: 9px; color: #888; }
+
+    .flex-tables-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    @media (max-width: 650px) { .flex-tables-grid { grid-template-columns: 1fr; } }
+    .badge-free-time { display: inline-block; background: #dcfce7; color: #15803d; border: 1px solid #86efac; padding: 4px 8px; border-radius: 6px; font-weight: 800; font-size: 12px; margin: 2px; }
+
+    /* 이스터 에그 모달 */
+    .easter-egg-card {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      max-width: 420px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+      border: 2px solid var(--primary);
+      animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    @keyframes popIn {
+      0% { transform: scale(0.8); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    /* ═══════════════════════════════
+       인쇄 전용 스타일 (@media print)
+    ═══════════════════════════════ */
+    @media print {
+      @page { size: A4 portrait; margin: 0; }
+      body { background: white !important; padding: 0 !important; margin: 0 !important; }
+      .app-nav, .dashboard-layout > div:first-child,
+      .result-summary-bar, .table-box, .diff-summary-card,
+      .doc-top-bar, .modal-overlay { display: none !important; }
+      .dashboard-layout { display: block !important; margin: 0 !important; padding: 0 !important; }
+      .right-panel { display: block !important; }
+      .confirmation-container { display: block !important; border: none !important; box-shadow: none !important; padding: 0 !important; }
+      .official-plan-sheet { border: none !important; padding: 0 15.25mm !important; width: 210mm !important; }
+      .approval-table th, .approval-table td { border: 1px solid black !important; }
+      .pdf-form-table th, .pdf-form-table td { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      /* 인쇄 시 학교 양식 실측(mm)으로 교정 */
+      .pdf-form-table { border: 0.5mm solid #000 !important; }
+      .pdf-form-table th, .pdf-form-table td { border: 0.12mm solid #000 !important; }
+      .pdf-form-table th.gubun-cell, .pdf-form-table td.gubun-cell {
+        border-left: 0.5mm double #000 !important;
+        border-right: 0.5mm double #000 !important;
+      }
+      .pdf-form-table tr.top-info-row.reason-row th,
+      .pdf-form-table tr.top-info-row.reason-row td { border-bottom: 0.7mm double #000 !important; }
+    }
+
+    /* ── 데이터 상태 배너 (GitHub 정적 버전) ── */
+    .data-banner {
+      margin: 8px 16px 0; padding: 8px 14px; border-radius: 8px;
+      font-size: 12px; text-align: center;
+    }
+    .data-banner.warn { background: #fef3c7; color: #92400e; border: 1px solid #fcd34d; }
+    .data-banner.ok { background: #ecfdf5; color: #065f46; border: 1px solid #6ee7b7; }
+  
+    /* 동일 교과군 강조 뱃지 */
+    .badge-same-subject {
+      display: inline-block;
+      background: #ecfdf5;
+      color: #047857;
+      border: 1px solid #a7f3d0;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 1px 6px;
+      border-radius: 4px;
+      margin-left: 4px;
+      vertical-align: middle;
+    }
+    .badge-other-subject {
+      display: inline-block;
+      background: #f3f4f6;
+      color: #4b5563;
+      border: 1px solid #e5e7eb;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 1px 6px;
+      border-radius: 4px;
+      margin-left: 4px;
+      vertical-align: middle;
+    }
+
+  
+    /* ── 메인 모드 전환 탭 ── */
+    .main-mode-tabs-container {
+      max-width: 1400px;
+      margin: 10px auto 0 auto;
+      padding: 0 16px;
+    }
+    .main-mode-tabs {
+      display: flex;
+      gap: 8px;
+      border-bottom: 2px solid var(--gray-200);
+    }
+    .main-mode-tab {
+      background: none;
+      border: none;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--gray-500);
+      padding: 10px 20px;
+      border-radius: var(--radius-md) var(--radius-md) 0 0;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      border-bottom: 3px solid transparent;
+      margin-bottom: -2px;
+    }
+    .main-mode-tab:hover {
+      color: var(--primary);
+      background: #f1f5f9;
+    }
+    .main-mode-tab.active {
+      color: var(--primary);
+      border-bottom-color: var(--primary);
+      background: white;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.03);
+    }
+    .badge-new {
+      background: #ef4444;
+      color: white;
+      font-size: 10px;
+      padding: 1px 6px;
+      border-radius: 999px;
+      font-weight: 800;
+    }
+
+    /* ── 출장 모드 전용 스타일 ── */
+    .trip-dashboard-layout {
+      max-width: 1400px;
+      margin: 16px auto;
+      padding: 0 16px;
+    }
+    .badge-purple {
+      background: #7c3aed;
+      color: white;
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 700;
+      display: inline-block;
+    }
+    .badge-gold {
+      background: #f59e0b;
+      color: white;
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 700;
+      display: inline-block;
+    }
+    .badge-gray {
+      background: var(--gray-200);
+      color: var(--gray-700);
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 600;
+      display: inline-block;
+    }
+    .badge-danger {
+      background: #fee2e2;
+      color: #dc2626;
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 700;
+      display: inline-block;
+    }
+    .trip-candidate-select {
+      width: 100%;
+      padding: 7px 10px;
+      border: 1.5px solid var(--gray-300);
+      border-radius: var(--radius-md);
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--gray-800);
+      background: white;
+      cursor: pointer;
+    }
+    .trip-candidate-select:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+    }
+    .workload-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 12px;
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius-md);
+      font-size: 12px;
+    }
+    .workload-item.heavy {
+      background: #fff1f2;
+      border-color: #fecdd3;
+    }
+
+    /* ── 사용 설명서 모달 스타일 ── */
+    .help-modal-card {
+      background: white;
+      border-radius: 16px;
+      max-width: 880px;
+      width: 95%;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.28);
+      overflow: hidden;
+      animation: modalFadeIn 0.2s ease-out;
+    }
+    .help-modal-header {
+      padding: 14px 20px;
+      background: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .help-modal-header h3 {
+      font-size: 16px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0;
+    }
+    .help-modal-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      padding: 8px 16px;
+      background: #f8fafc;
+      border-bottom: 1px solid var(--gray-200);
+      font-size: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 5;
+    }
+    .help-nav-chip {
+      padding: 3px 9px;
+      border-radius: 12px;
+      background: white;
+      border: 1px solid var(--gray-300);
+      color: var(--gray-700);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 11.5px;
+      transition: all 0.15s;
+    }
+    .help-nav-chip:hover {
+      background: var(--primary-light);
+      color: var(--primary);
+      border-color: var(--primary);
+    }
+    .help-modal-body {
+      padding: 20px 24px;
+      overflow-y: auto;
+      font-size: 13.5px;
+      line-height: 1.7;
+      color: var(--gray-800);
+      scroll-behavior: smooth;
+    }
+    .help-section {
+      margin-bottom: 24px;
+      padding-top: 8px;
+    }
+    .help-modal-body h2 {
+      font-size: 15.5px;
+      font-weight: 800;
+      color: #1e3a8a;
+      margin: 0 0 10px 0;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #e2e8f0;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .help-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0 14px 0;
+      font-size: 12.5px;
+    }
+    .help-table th, .help-table td {
+      border: 1px solid var(--gray-300);
+      padding: 7px 11px;
+      text-align: left;
+    }
+    .help-table th {
+      background: #f1f5f9;
+      color: #334155;
+      font-weight: 700;
+    }
+    .help-callout-tip {
+      background: #eff6ff;
+      border-left: 4px solid #3b82f6;
+      padding: 9px 13px;
+      border-radius: 0 8px 8px 0;
+      margin: 10px 0;
+      font-size: 12.5px;
+      color: #1e40af;
+    }
+    .help-callout-warn {
+      background: #fffbeb;
+      border-left: 4px solid #f59e0b;
+      padding: 9px 13px;
+      border-radius: 0 8px 8px 0;
+      margin: 10px 0;
+      font-size: 12.5px;
+      color: #92400e;
+    }
+    .help-step-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 10px 13px;
+      margin: 8px 0;
+    }
+    .help-step-title {
+      font-weight: 800;
+      color: #1e293b;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .help-step-badge {
+      background: #2563eb;
+      color: white;
+      font-size: 11px;
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-weight: 700;
+    }
+    .help-modal-footer {
+      padding: 12px 20px;
+      background: #f8fafc;
+      border-top: 1px solid var(--gray-200);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      color: var(--gray-500);
+    }
+
+</style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+</head>
+<body>
+
+  <!-- ── 1. 상단 네비게이션 ── -->
+  <div class="app-nav">
+    <div class="logo-area" ondblclick="showEasterEgg()" title="더블클릭해보세요!">
+      <img src="data:image/png;base64,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" alt="대전동산중 로고" class="school-logo-img">
+      <h1>결보강 시간표 자동 탐색</h1>
+      <span class="badge-school">2026 대전동산중</span>
+    </div>
+    <div class="nav-actions">
+      <button type="button" class="btn btn-sm btn-white" onclick="openHelpModal()" style="cursor:pointer;" title="사용 설명서 보기">📖 사용 설명서</button>
+      <a class="btn btn-sm btn-white" id="linkSheetUrl" href="#" target="_blank" rel="noopener" style="text-decoration:none; display:none;" title="기준 구글 스프레드시트 열기">📊 시간표 시트 열기</a>
+      <button type="button" class="btn btn-sm btn-white" onclick="loadTimetableOnStart(true)" style="cursor:pointer;" title="구글 시트 최신 시간표 다시 불러오기">🔄 시트 동기화</button>
+      <a class="btn btn-sm btn-white" href="timetable-sample.csv" download="시간표_양식.csv" style="text-decoration:none;">📥 시간표 양식 다운로드</a>
+    </div>
+  </div>
+
+  <!-- ── 데이터 상태 배너 (GitHub 정적 버전) ── -->
+  <div id="dataBanner" class="data-banner" style="display:none;"></div>
+
+  <!-- ── 3. 메인 2열 대시보드 ── -->
+    <!-- ── 메인 모드 탭 (단일 차시 vs 출장·연가 일괄) ── -->
+  <div class="main-mode-tabs-container">
+    <div class="main-mode-tabs">
+      <button class="main-mode-tab active" id="tabModeSingle" onclick="switchMainMode('single')">
+        🔍 단일 차시 탐색
+      </button>
+      <button class="main-mode-tab" id="tabModeTrip" onclick="switchMainMode('trip')">
+        ✈️ 출장·연가 패키지 모드 <span class="badge-new">NEW</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="dashboard-layout">
+
+    <!-- ── [좌측] 패널 ── -->
+    <div class="left-panel">
+
+      <!-- 1) 1:1 결보강 탐색 카드 -->
+      <div class="card">
+        <div class="card-title">
+          <span>🔍 탐색 조건 설정</span>
+          <button class="btn btn-sm btn-purple" onclick="openTeacherModal()">📊 내 시간표</button>
+        </div>
+
+        <div class="input-row form-group">
+          <div>
+            <label>기준 교사명</label>
+            <input type="text" id="teacher" value="유재" placeholder="예: 유재" oninput="onManualFormInput()">
+          </div>
+          <div>
+            <label>결강 사유</label>
+            <select id="reasonSelect" onchange="onManualFormInput()">
+              <option value="출장으로 인한 수업교체 및 보강">출장</option>
+              <option value="연가로 인한 수업교체 및 보강" selected>연가</option>
+              <option value="병가로 인한 수업교체 및 보강">병가</option>
+              <option value="공가로 인한 수업교체 및 보강">공가</option>
+              <option value="특별휴가로 인한 수업교체 및 보강">특별휴가</option>
+              <option value="수업 교체 처리">기타</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>결강/교체 일자 (달력 선택시 요일 자동반영)</label>
+          <input type="date" id="targetDate" onchange="onDateChanged(this.value)">
+          <div class="day-tabs" id="dayTabs">
+            <button class="day-tab active" onclick="selectDayTab('월', event)">월</button>
+            <button class="day-tab" onclick="selectDayTab('화', event)">화</button>
+            <button class="day-tab" onclick="selectDayTab('수', event)">수</button>
+            <button class="day-tab" onclick="selectDayTab('목', event)">목</button>
+            <button class="day-tab" onclick="selectDayTab('금', event)">금</button>
+          </div>
+          <input type="hidden" id="day" value="월">
+        </div>
+
+        <div class="form-group">
+          <label>결강/교체 교시</label>
+          <div class="period-grid">
+            <button class="period-btn" onclick="selectPeriod(this, 1)">1</button>
+            <button class="period-btn active" onclick="selectPeriod(this, 2)">2</button>
+            <button class="period-btn" onclick="selectPeriod(this, 3)">3</button>
+            <button class="period-btn" onclick="selectPeriod(this, 4)">4</button>
+            <button class="period-btn" onclick="selectPeriod(this, 5)">5</button>
+            <button class="period-btn" onclick="selectPeriod(this, 6)">6</button>
+            <button class="period-btn" onclick="selectPeriod(this, 7)">7</button>
+          </div>
+          <input type="hidden" id="period" value="2">
+        </div>
+
+        <div class="form-group">
+          <label>탐색 방식</label>
+          <div class="mode-toggle-group">
+            <label class="mode-btn checked" id="lblSwap">
+              <input type="checkbox" id="chkSwap" checked onchange="toggleMode('lblSwap', this)">
+              🔄 수업 맞교환
+            </label>
+            <label class="mode-btn" id="lblSub">
+              <input type="checkbox" id="chkSubstitute" onchange="toggleMode('lblSub', this)">
+              📋 수업 보강
+            </label>
+          </div>
+        </div>
+
+        <div class="input-row form-group">
+          <div>
+            <label>특정 보강 교사</label>
+            <input type="text" id="subTargetTeacher" list="teacherDatalist" placeholder="전체 검색시 공란 (선택 가능)">
+          </div>
+          <div>
+            <label>연속수업 방지</label>
+            <select id="consecutiveLimit">
+              <option value="0">제한 없음</option>
+              <option value="2">2연속 제외</option>
+              <option value="3" selected>3연속 제외</option>
+              <option value="4">4연속 제외</option>
+            </select>
+          </div>
+        </div>
+
+        <button class="btn btn-primary btn-block" onclick="searchSchedule()" style="margin-top:10px;">
+          🔍 실시간 시간표 탐색
+        </button>
+      </div>
+
+      <!-- 2) 계획서 항목 수동 수정 카드 -->
+      <div class="card" style="border-top: 3px solid var(--success);">
+        <div class="card-title" style="color: var(--success);">
+          <span>✏️ 계획서 항목 수동 수정</span>
+          <span style="font-size:10px; color:var(--gray-400);">실시간 계획서 반영</span>
+        </div>
+        <div class="input-row form-group">
+          <div>
+            <label>교 과</label>
+            <input type="text" id="formCategory" placeholder="예: 영어" oninput="onManualFormInput()">
+          </div>
+          <div>
+            <label>학 반</label>
+            <input type="text" id="formClass" placeholder="예: 2-1" oninput="onManualFormInput()">
+          </div>
+        </div>
+        <div class="input-row form-group">
+          <div>
+            <label>변경 전 과목 (A)</label>
+            <input type="text" id="formSubject" placeholder="예: 영어" oninput="onManualFormInput()">
+          </div>
+          <div>
+            <label>변경 전 교시</label>
+            <input type="text" id="formPeriodA" placeholder="예: 2" oninput="onManualFormInput()">
+          </div>
+        </div>
+        <div class="input-row form-group">
+          <div>
+            <label>변경 후 과목 (B)</label>
+            <input type="text" id="formSubjectB" placeholder="예: 수학" oninput="onManualFormInput()">
+          </div>
+          <div>
+            <label>변경 후 교시</label>
+            <input type="text" id="formPeriodB" placeholder="예: 5" oninput="onManualFormInput()">
+          </div>
+        </div>
+        <div class="input-row form-group">
+          <div>
+            <label>담당 교사명 (A)</label>
+            <input type="text" id="formTeacherA" list="teacherDatalist" placeholder="예: 권상명" oninput="onManualFormInput()">
+          </div>
+          <div>
+            <label>상대 교사명 (B)</label>
+            <input type="text" id="formTeacherB" list="teacherDatalist" placeholder="예: 맹준섭" oninput="onManualFormInput()">
+          </div>
+        </div>
+      </div>
+
+      <!-- 3) 긴급 회의 (공동 공강) 카드 -->
+      <div class="card" style="border-top: 3px solid var(--purple);">
+        <div class="card-title" style="color: var(--purple);">
+          <span>👥 긴급 회의 (공동 공강) 탐색</span>
+        </div>
+        <div class="form-group">
+          <label>회의 참석 교사목록 (쉼표 구분)</label>
+          <input type="text" id="meetingTeachers" placeholder="예: 유재, 홍길, 김철">
+        </div>
+        <button class="btn btn-purple btn-block" onclick="findCommonFreeTime()" style="margin-top:6px;">
+          ⚡ 공동 공강시간 찾아내기
+        </button>
+      </div>
+
+    </div>
+
+    <!-- ── [우측] 결과 & 확인원 패널 ── -->
+    <div class="right-panel">
+
+      <div id="initialPlaceholder" class="placeholder-box">
+        <div class="icon">🧭</div>
+        <p>좌측에서 기준 교사, 날짜, 교시를 지정한 후 <b>[🔍 실시간 시간표 탐색]</b>을 누르시거나,<br>참석 교사를 입력 후 <b>[⚡ 공동 공강시간 찾아내기]</b>를 누르세요.</p>
+      </div>
+
+      <div id="resultSummaryBar" class="result-summary-bar" style="display:none;">
+        <div>
+          <span style="font-size:11px; color:var(--gray-500);">기준 수업 정보</span>
+          <div style="font-size:14px; font-weight:800; color:var(--gray-800);" id="summaryTargetText">-</div>
+        </div>
+        <div id="candidateBadgeCount" style="font-size:12px; font-weight:700; color:var(--primary);">-</div>
+      </div>
+
+      <div id="resultTableArea" class="table-box" style="display:none;">
+        <table class="compact-table" id="candidatesTable">
+          <thead>
+            <tr>
+              <th>구분</th>
+              <th>상대(보강) 교사</th>
+              <th>수업 일시 / 교시</th>
+              <th>과목 및 학급</th>
+              <th>계획서 생성</th>
+            </tr>
+          </thead>
+          <tbody id="candidatesTbody"></tbody>
+        </table>
+      </div>
+
+      <!-- 한눈에 보는 변경 요약 (Diff Banner) -->
+      <div id="diffCard" class="diff-summary-card">
+        <div style="font-size:12px; font-weight:800; color:var(--primary); display:flex; justify-content:space-between; align-items:center;">
+          <span>⚡ 수업 변경 직관 요약</span>
+          <div style="display:flex; gap:6px; align-items:center;">
+            <button class="btn btn-sm btn-purple" id="btnSimulateModal" onclick="openSimulationModal()">🔍 변동 시간표 시뮬레이션 비교</button>
+            <span id="diffTypeBadge" style="background:#e0e7ff; color:#3730a3; padding:1px 6px; border-radius:4px; font-size:11px;">-</span>
+          </div>
+        </div>
+        <div class="diff-grid">
+          <div class="diff-teacher-box">
+            <div class="t-name" id="diffNameA">-</div>
+            <div class="t-detail" id="diffDetailA">-</div>
+          </div>
+          <div class="diff-arrow">⇄</div>
+          <div class="diff-teacher-box">
+            <div class="t-name" id="diffNameB">-</div>
+            <div class="t-detail" id="diffDetailB">-</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 최종 확인원 양식 -->
+      <div id="confirmationCard" class="confirmation-container">
+        <div class="doc-top-bar">
+          <div style="font-size:13px; font-weight:800; color:var(--gray-700);">
+            📄 수업 (교체ㆍ보강) 계획서 미리보기
+          </div>
+          <div style="display:flex; gap:6px; flex-wrap:wrap;">
+            <button class="btn btn-sm btn-purple" onclick="copyFormText()">📋 메신저 복사</button>
+            <button class="btn btn-sm btn-warning" onclick="printDoc()">🖨️ 계획서 인쇄(PDF)</button>
+            <button class="btn btn-sm btn-primary" id="btnDownloadHwpx" onclick="downloadHwpx()">📥 HWPX 다운로드</button>
+          </div>
+        </div>
+
+        <div id="docPreviewBox" class="official-plan-sheet"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+    <!-- ── 3-B. [출장·연가 일괄 결보강 대시보드] ── -->
+  <div id="tripDashboardLayout" class="trip-dashboard-layout" style="display:none;">
+
+    <!-- 1) 출장 조건 설정 카드 -->
+    <div class="card" style="border-top: 3px solid var(--primary); margin-bottom: 16px;">
+      <div class="card-title">
+        <span>✈️ 출장·연가 일괄 결보강 탐색 설정</span>
+        <span style="font-size: 11px; color: var(--gray-500);">3일 이상 다차시 결강을 한 번에 배정합니다</span>
+      </div>
+      <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: flex-end;">
+        <div style="flex: 1; min-width: 130px;">
+          <label style="font-size: 12px; font-weight: 700; color: var(--gray-700); margin-bottom: 4px; display: block;">출장(결강) 교사</label>
+          <input type="text" id="tripTeacher" list="teacherDatalist" placeholder="예: 유재" style="width: 100%;">
+        </div>
+        <div style="flex: 1; min-width: 140px;">
+          <label style="font-size: 12px; font-weight: 700; color: var(--gray-700); margin-bottom: 4px; display: block;">출장 시작일</label>
+          <input type="date" id="tripStartDate" onchange="onTripStartDateChange(this.value)" style="width: 100%;">
+        </div>
+        <div style="flex: 1; min-width: 140px;">
+          <label style="font-size: 12px; font-weight: 700; color: var(--gray-700); margin-bottom: 4px; display: block;">출장 종료일</label>
+          <input type="date" id="tripEndDate" style="width: 100%;">
+        </div>
+        <div style="flex: 1; min-width: 140px;">
+          <label style="font-size: 12px; font-weight: 700; color: var(--gray-700); margin-bottom: 4px; display: block;">결강 사유</label>
+          <select id="tripReason" style="width: 100%;">
+            <option value="출장으로 인한 수업교체 및 보강" selected>출장</option>
+            <option value="연가로 인한 수업교체 및 보강">연가</option>
+            <option value="병가로 인한 수업교체 및 보강">병가</option>
+            <option value="공가로 인한 수업교체 및 보강">공가</option>
+            <option value="특별휴가로 인한 수업교체 및 보강">특별휴가</option>
+            <option value="수업 교체 및 보강 처리">기타</option>
+          </select>
+        </div>
+        <div style="width: 110px;">
+          <label style="font-size: 12px; font-weight: 700; color: var(--gray-700); margin-bottom: 4px; display: block;">연속수업 제한</label>
+          <select id="tripConsecutiveLimit" style="width: 100%;">
+            <option value="0">제한 없음</option>
+            <option value="2">2연속 제외</option>
+            <option value="3" selected>3연속 제외</option>
+            <option value="4">4연속 제외</option>
+          </select>
+        </div>
+        <div style="flex: 1; min-width: 190px;">
+          <label style="font-size: 12px; font-weight: 700; color: var(--gray-700); margin-bottom: 4px; display: block;">배정 정책 (1순위 교체 권장)</label>
+          <select id="tripPolicy" style="width: 100%;">
+            <option value="swap_first" selected>🔄 1순위 수업교체 우선 (교체 불가 시 보강)</option>
+            <option value="swap_only">🔄 수업교체만 탐색 (All 교체)</option>
+            <option value="sub_only">📋 보강만 탐색 (All 보강)</option>
+          </select>
+        </div>
+        <div style="display: flex; align-items: center; padding-bottom: 8px;">
+          <label style="font-size: 12px; font-weight: 600; color: var(--gray-700); cursor: pointer; display: flex; align-items: center; gap: 4px; user-select: none;">
+            <input type="checkbox" id="tripAllowNextWeek" checked style="cursor: pointer; width: 15px; height: 15px;">
+            <span>다음 주 교체 허용</span>
+          </label>
+        </div>
+        <div>
+          <button class="btn btn-primary" onclick="loadTripLessons()" style="height: 38px; padding: 0 18px;">
+            🔍 출장 수업 불러오기
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2) 결과 영역: 수업 목록 및 자동 배정 -->
+    <div id="tripResultArea" style="display:none;">
+      <!-- 액션 & 통계 요약 바 -->
+      <div style="background: white; border-radius: var(--radius-lg); border: 1px solid var(--gray-200); padding: 14px 18px; margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; box-shadow: var(--shadow-sm);">
+        <div>
+          <div style="font-size: 12px; color: var(--gray-500); font-weight: 600;" id="tripSummaryPeriod">-</div>
+          <div style="font-size: 16px; font-weight: 800; color: var(--gray-800); display: flex; align-items: center; gap: 8px;">
+            <span id="tripSummaryTitle">-</span>
+            <span class="badge" id="tripProgressBadge" style="background: #e0e7ff; color: #4338ca; font-size: 12px;">0 / 0 배정 완료</span>
+          </div>
+        </div>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+          <button class="btn btn-purple" onclick="runTripAutoAssign()" title="동일교과, 학급 전담, 부하 분산을 종합 계산하여 자동 배정합니다">
+            ⚡ 원클릭 최적 자동 배정
+          </button>
+          <button class="btn btn-white" onclick="resetTripAssignments()">
+            🔄 배정 초기화
+          </button>
+          <button class="btn btn-success" id="btnDownloadTripHwpx" onclick="downloadTripHwpx()">
+            📄 출장 결보강 계획서 다운로드 (HWPX)
+          </button>
+        </div>
+      </div>
+
+      <!-- 2열 레이아웃: 좌측 수업별 배정 테이블 / 우측 부하 분산 현황판 -->
+      <div style="display: grid; grid-template-columns: 2.2fr 1fr; gap: 16px;">
+        <!-- 좌측: 차시별 배정 카드/테이블 -->
+        <div class="table-box" style="padding: 0;">
+          <table class="compact-table" id="tripLessonsTable">
+            <thead>
+              <tr>
+                <th style="width: 140px;">일시 / 교시</th>
+                <th style="width: 130px;">학급 및 과목</th>
+                <th>수업 교체 / 보강 배정</th>
+                <th style="width: 190px;">배정 상태 및 요약</th>
+              </tr>
+            </thead>
+            <tbody id="tripLessonsTbody"></tbody>
+          </table>
+        </div>
+
+        <!-- 우측: 부하 분산 & 통계 패널 -->
+        <div>
+          <div class="card" style="border-top: 3px solid var(--purple); margin-bottom: 14px;">
+            <div class="card-title" style="color: var(--purple);">
+              <span>📊 교사별 보강 배정 부하 현황</span>
+            </div>
+            <p style="font-size: 11px; color: var(--gray-500); margin-bottom: 10px;">
+              특정 교사에게 보강이 편중되지 않도록 분산 상태를 실시간 확인합니다.
+            </p>
+            <div id="tripWorkloadStats" style="display: flex; flex-direction: column; gap: 6px; max-height: 400px; overflow-y: auto;">
+              <div style="font-size: 12px; color: var(--gray-400); text-align: center; padding: 20px;">
+                수업을 불러온 후 보강을 배정하면 현황이 표시됩니다.
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="background: #f8fafc; border: 1px dashed var(--gray-300);">
+            <div style="font-size: 12px; font-weight: 700; color: var(--gray-700); margin-bottom: 6px;">
+              💡 출장 모드 스마트 배정 원칙
+            </div>
+            <ul style="font-size: 11px; color: var(--gray-600); line-height: 1.6; margin: 0; padding-left: 16px;">
+              <li><b>★동일교과 우선:</b> 진도 손실 방지를 위해 동일 교과 교사 우선 배치</li>
+              <li><b>👑같은 반 전담 우선:</b> 한 학급에 3일간 동일 교사가 들어가도록 묶음 배정</li>
+              <li><b>부하 균등 분산:</b> 이미 배정된 교사는 감점하여 전체 교사에게 고루 배정</li>
+              <li><b>과부하 방지:</b> 1일 2건 이상 배정 방지 및 충돌 차단</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 초기 안내 Placeholder -->
+    <div id="tripInitialPlaceholder" class="placeholder-box" style="margin-top: 20px;">
+      <div class="icon">✈️</div>
+      <p>상단에서 <b>출장 교사, 시작일, 기간(예: 3일)</b>을 선택하고<br><b>[🔍 출장 수업 불러오기]</b>를 클릭하세요.<br>기간 내 모든 수업을 한 화면에서 원클릭으로 자동 배정하고 HWPX 대장으로 출력합니다.</p>
+    </div>
+
+  </div>
+
+<!-- ── 4. 내 시간표 팝업 모달 ── -->
+  <div class="modal-overlay" id="teacherModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="modalTitle">📊 내 전체 시간표</h3>
+        <button class="modal-close" onclick="closeTeacherModal()">✕</button>
+      </div>
+      <div id="modalTimetableArea"></div>
+    </div>
+  </div>
+
+  <!-- ── 5. 변동 시간표 시뮬레이션 비교 모달 ── -->
+  <div class="modal-overlay" id="simulationModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="simModalTitle">🔄 교체/보강 변동 시간표 시뮬레이션 비교</h3>
+        <button class="modal-close" onclick="closeSimulationModal()">✕</button>
+      </div>
+      <div id="simModalContent"></div>
+    </div>
+  </div>
+
+  <!-- ── 6. 이스터 에그 모달 ── -->
+  <div class="modal-overlay" id="easterEggModal" onclick="closeEasterEgg()">
+    <div class="easter-egg-card" onclick="event.stopPropagation()">
+      <div style="font-size: 36px; margin-bottom: 8px;">🚀</div>
+      <h3 style="font-size: 16px; font-weight: 800; color: var(--primary); margin-bottom: 12px;">System Information</h3>
+      <p style="font-size: 13px; font-weight: 700; color: var(--gray-700); line-height: 1.6; word-break: break-all;">
+        Daejeon Dongsan High School Schedule System.<br>Created by J.S.
+      </p>
+      <button class="btn btn-primary btn-sm" onclick="closeEasterEgg()" style="margin-top: 16px; width: 80px;">확인</button>
+    </div>
+  </div>
+
+  <script src="engine.js?v=20261028_ms_v1"></script>
+  <script>
+/* ═══════════════════════════════════════════════════════════════
+   데이터 레이어 (Google Sheets 실시간 연동 v2.0)
+   - 1순위: 구글 스프레드시트 실시간 CSV 로드 (수정 시 실시간 반영)
+   - 2순위: 구글 시트 로드 실패 시 로컬 timetable.csv 백업 로드
+   ═══════════════════════════════════════════════════════════════ */
+var GOOGLE_SHEET_CONFIG = {
+  sheetId: "", // 동산중 구글 시트 연동 시 여기에 시트 ID를 입력하세요.
+  gid: "0",
+  get csvUrl() {
+    return "https://docs.google.com/spreadsheets/d/" + this.sheetId + "/export?format=csv&gid=" + this.gid;
+  },
+  get webUrl() {
+    return "https://docs.google.com/spreadsheets/d/" + this.sheetId + "/edit?gid=" + this.gid;
+  }
+};
+
+var GB = {
+  scheduleList: [],
+  scheduleIndex: {},
+  allTeachers: [],
+  isSample: false,
+  loaded: false,
+  source: "",
+  syncTime: ""
+};
+
+function rebuildEngine(csvText) {
+  var data = parseCSV(csvText);
+  var scheduleList = parseSheetValues(data);
+  GB.scheduleList = scheduleList;
+  GB.scheduleIndex = buildScheduleIndex(scheduleList);
+  GB.allTeachers = (data[3] || []).slice(2).map(function(t) { return String(t || "").trim(); }).filter(Boolean);
+  GB.loaded = true;
+  populateTeacherDatalist(GB.allTeachers);
+}
+
+function populateTeacherDatalist(teachers) {
+  var dl = document.getElementById('teacherDatalist');
+  if (!dl || !teachers) return;
+  dl.innerHTML = '';
+  var sorted = teachers.slice().sort(function(a, b) { return a.localeCompare(b, 'ko'); });
+  sorted.forEach(function(name) {
+    var opt = document.createElement('option');
+    opt.value = name;
+    dl.appendChild(opt);
+  });
+}
+
+function updateDataBanner() {
+  var banner = document.getElementById('dataBanner');
+  if (!banner) return;
+  if (!GB.loaded || !GB.scheduleList.length) {
+    banner.style.display = 'block';
+    banner.className = 'data-banner warn';
+    banner.innerHTML = "⚠️ 시간표 데이터를 불러오지 못했습니다. <a href='javascript:void(0)' onclick='loadTimetableOnStart(true)' style='color:#b45309;font-weight:700;margin-left:8px;text-decoration:underline;'>🔄 다시 시도</a>";
+  } else if (GB.isSample) {
+    banner.style.display = 'block';
+    banner.className = 'data-banner warn';
+    banner.innerHTML = "⚠️ 현재 <b>샘플 데이터</b>로 동작 중입니다. <a href='" + GOOGLE_SHEET_CONFIG.webUrl + "' target='_blank' rel='noopener' style='color:#b45309;font-weight:700;margin-left:6px;text-decoration:underline;'>📊 구글 시트 확인하기</a>";
+  } else {
+    banner.style.display = 'block';
+    banner.className = 'data-banner ok';
+    var srcText = GB.source === 'google_sheet' ? "📊 구글 스프레드시트 실시간 연동" : "📁 저장소 백업 시간표";
+    var timeText = GB.syncTime ? " (" + GB.syncTime + " 동기화)" : "";
+    banner.innerHTML = "✅ <b>" + srcText + "</b> — 전체 교사 " + GB.allTeachers.length + "명 로드됨" + timeText +
+      " <button type='button' onclick='loadTimetableOnStart(true)' style='margin-left:10px;padding:2px 8px;font-size:11px;border-radius:4px;border:1px solid #10b981;background:#ffffff;cursor:pointer;color:#065f46;font-weight:700;'>🔄 실시간 동기화</button>" +
+      " <a href='" + GOOGLE_SHEET_CONFIG.webUrl + "' target='_blank' rel='noopener' style='margin-left:6px;font-size:11px;color:#047857;text-decoration:underline;'>시트 열기 ↗</a>";
+  }
+}
+
+function isSampleCSV(text) {
+  var firstLine = String(text || "").split("\n")[0] || "";
+  return firstLine.indexOf("결보강 시간표 샘플") >= 0;
+}
+
+function decodeCSVBuffer(buf) {
+  var t = "";
+  try { t = new TextDecoder("utf-8").decode(buf); } catch (e) {}
+  if (t.indexOf("\uFFFD") >= 0) {
+    try { t = new TextDecoder("euc-kr").decode(buf); } catch (e) {}
+  }
+  return t;
+}
+
+function loadTimetableOnStart(isManual) {
+  var banner = document.getElementById('dataBanner');
+  if (isManual && banner) {
+    banner.style.display = 'block';
+    banner.className = 'data-banner';
+    banner.style.background = '#e0e7ff';
+    banner.style.color = '#3730a3';
+    banner.style.border = '1px solid #c7d2fe';
+    banner.innerHTML = "⏳ 최신 시간표를 동기화하는 중...";
+  }
+
+  // 상단 시트 열기 버튼 연동
+  var sheetLinkEl = document.getElementById('linkSheetUrl');
+  if (sheetLinkEl && GOOGLE_SHEET_CONFIG.sheetId) {
+    sheetLinkEl.href = GOOGLE_SHEET_CONFIG.webUrl;
+    sheetLinkEl.style.display = 'inline-block';
+  }
+
+  function fetchBuffer(url, timeoutMs) {
+    return new Promise(function(resolve, reject) {
+      var timer = setTimeout(function() { reject(new Error("Timeout: " + url)); }, timeoutMs || 6000);
+      var fetchUrl = url + (url.indexOf("?") >= 0 ? "&" : "?") + "ts=" + Date.now();
+      fetch(fetchUrl).then(function(r) {
+        clearTimeout(timer);
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        return r.arrayBuffer();
+      }).then(resolve).catch(function(err) {
+        clearTimeout(timer);
+        reject(err);
+      });
+    });
+  }
+
+  function loadLocalCSV() {
+    fetchBuffer("timetable.csv", 4000)
+      .then(function(buf) {
+        var t = decodeCSVBuffer(buf);
+        rebuildEngine(t);
+        GB.source = "local_csv";
+        GB.isSample = isSampleCSV(t);
+        GB.syncTime = new Date().toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+        updateDataBanner();
+        if (isManual) alert("시간표(timetable.csv)를 성공적으로 로드했습니다! (" + GB.allTeachers.length + "명)");
+      })
+      .catch(function(localErr) {
+        console.error("All timetable load failed:", localErr);
+        GB.loaded = false;
+        updateDataBanner();
+        if (isManual) alert("시간표를 불러오지 못했습니다. timetable.csv 파일을 확인해주세요.");
+      });
+  }
+
+  // 1순위: 구글 스프레드시트 (ID가 등록되어 있을 때)
+  if (GOOGLE_SHEET_CONFIG.sheetId) {
+    fetchBuffer(GOOGLE_SHEET_CONFIG.csvUrl, 5000)
+      .then(function(buf) {
+        var t = decodeCSVBuffer(buf);
+        rebuildEngine(t);
+        GB.source = "google_sheet";
+        GB.isSample = isSampleCSV(t);
+        GB.syncTime = new Date().toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+        updateDataBanner();
+        if (isManual) alert("구글 스프레드시트의 최신 시간표가 성공적으로 동기화되었습니다! (" + GB.allTeachers.length + "명)");
+      })
+      .catch(function(sheetErr) {
+        console.warn("Google Sheet load failed, fallback to local timetable.csv:", sheetErr);
+        loadLocalCSV();
+      });
+  } else {
+    // 구글 시트 미설정 시 로컬 timetable.csv 즉시 로드
+    loadLocalCSV();
+  }
+}
+
+var dayMap = { 0: "일", 1: "월", 2: "화", 3: "수", 4: "목", 5: "금", 6: "토" };
+    var currentConfirmedData = null;
+
+    window.onload = function() {
+      var today = new Date();
+      var dayOfWeek = today.getDay();
+      if (dayOfWeek === 0) today.setDate(today.getDate() + 1);
+      else if (dayOfWeek === 6) today.setDate(today.getDate() + 2);
+
+      var yyyy = today.getFullYear();
+      var mm = String(today.getMonth() + 1).padStart(2, '0');
+      var dd = String(today.getDate()).padStart(2, '0');
+      var dateStr = yyyy + '-' + mm + '-' + dd;
+
+      document.getElementById('targetDate').value = dateStr;
+      if (document.getElementById('tripStartDate')) {
+        document.getElementById('tripStartDate').value = dateStr;
+      }
+      if (document.getElementById('tripEndDate')) {
+        var defEnd = new Date(today);
+        defEnd.setDate(today.getDate() + 2);
+        var endY = defEnd.getFullYear();
+        var endM = String(defEnd.getMonth() + 1).padStart(2, '0');
+        var endD = String(defEnd.getDate()).padStart(2, '0');
+        document.getElementById('tripEndDate').value = endY + '-' + endM + '-' + endD;
+      }
+      onDateChanged(dateStr);
+      loadTimetableOnStart();
+    };
+
+    function showEasterEgg() {
+      document.getElementById('easterEggModal').classList.add('show');
+    }
+
+    function closeEasterEgg() {
+      document.getElementById('easterEggModal').classList.remove('show');
+    }
+
+    /* HTML 이스케이프 (시트 데이터의 따옴표/태그로 인한 깨짐·XSS 방지) */
+    function escapeHtml(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+    }
+
+    function onDateChanged(dateVal) {
+      if (!dateVal) return;
+      var d = new Date(dateVal + 'T00:00:00');
+      var dayKor = dayMap[d.getDay()];
+
+      if (dayKor === "토" || dayKor === "일") {
+        alert("선택하신 날짜는 주말(" + dayKor + "요일)입니다. 평일을 선택해 주세요.");
+        return;
+      }
+
+      document.getElementById('day').value = dayKor;
+      document.querySelectorAll('.day-tab').forEach(function(t) {
+        if (t.textContent.trim() === dayKor) t.classList.add('active');
+        else t.classList.remove('active');
+      });
+    }
+
+    /* [수정] 요일 탭 클릭 시 과거로 이동하지 않고 다음 주 해당 요일로 이동 */
+    function selectDayTab(dayKor, evt) {
+      document.querySelectorAll('.day-tab').forEach(function(t) { t.classList.remove('active'); });
+      var clickTarget = (evt && evt.target) ? evt.target : null;
+      if (clickTarget) clickTarget.classList.add('active');
+      document.getElementById('day').value = dayKor;
+
+      var curVal = document.getElementById('targetDate').value;
+      if (curVal) {
+        var curDate = new Date(curVal + 'T00:00:00');
+        var curDay = curDate.getDay();
+        var targetDayIdx = { "월": 1, "화": 2, "수": 3, "목": 4, "금": 5 }[dayKor];
+        var diff = targetDayIdx - curDay;
+        if (diff < 0) diff += 7; // 과거 날짜로 이동 방지
+        curDate.setDate(curDate.getDate() + diff);
+
+        var yyyy = curDate.getFullYear();
+        var mm = String(curDate.getMonth() + 1).padStart(2, '0');
+        var dd = String(curDate.getDate()).padStart(2, '0');
+        document.getElementById('targetDate').value = yyyy + '-' + mm + '-' + dd;
+      }
+    }
+
+    function selectPeriod(el, val) {
+      document.querySelectorAll('.period-btn').forEach(function(b) { b.classList.remove('active'); });
+      el.classList.add('active');
+      document.getElementById('period').value = val;
+    }
+
+    function toggleMode(labelId, checkbox) {
+      var label = document.getElementById(labelId);
+      if (checkbox.checked) label.classList.add('checked');
+      else label.classList.remove('checked');
+    }
+
+
+    function getDateForDay(baseDateStr, targetDayKor) {
+      var d = new Date(baseDateStr + 'T00:00:00');
+      var curDayIdx = d.getDay();
+      var targetDayIdx = { "월": 1, "화": 2, "수": 3, "목": 4, "금": 5 }[targetDayKor] || 1;
+      var diff = targetDayIdx - curDayIdx;
+      if (diff < 0) diff += 7;
+      d.setDate(d.getDate() + diff);
+      var yyyy = d.getFullYear();
+      var mm = String(d.getMonth() + 1).padStart(2, '0');
+      var dd = String(d.getDate()).padStart(2, '0');
+      return yyyy + '-' + mm + '-' + dd;
+    }
+
+    function formatShortDate(dateStr) {
+      if (!dateStr) return "";
+      var parts = dateStr.split('-');
+      if (parts.length === 3) {
+        return parseInt(parts[1], 10) + "." + parseInt(parts[2], 10) + ".";
+      }
+      return dateStr;
+    }
+
+    function splitSubjClass(str) {
+      if (!str) return { subj: "", cls: "" };
+      var parts = str.split('-');
+      if (parts.length >= 3) {
+        return { subj: parts[0], cls: parts[1] + "-" + parts[2] };
+      } else if (parts.length === 2) {
+        return { subj: parts[0], cls: parts[1] };
+      }
+      return { subj: str, cls: "" };
+    }
+
+    function deduceSubjectCategory(subj) {
+      if (!subj) return "영어";
+      if (subj.includes("국어") || subj.includes("문학") || subj.includes("심국")) return "국어";
+      if (subj.includes("수학") || subj.includes("미적") || subj.includes("기하") || subj.includes("수통") || subj.includes("수적")) return "수학";
+      if (subj.includes("영어") || subj.includes("영Ⅱ") || subj.includes("심영") || subj.includes("미영")) return "영어";
+      if (subj.includes("물") || subj.includes("화") || subj.includes("생") || subj.includes("지") || subj.includes("과")) return "과학";
+      if (subj.includes("역사") || subj.includes("한국") || subj.includes("사회") || subj.includes("통사") || subj.includes("세지") || subj.includes("정법") || subj.includes("윤리")) return "사회";
+      if (subj.includes("정보") || subj.includes("프로") || subj.includes("공일") || subj.includes("기술")) return "기술·가정";
+      return "교과";
+    }
+
+    /* ═══════════════════════════
+       1. 수동 입력 변경시 실시간 계획서 반영
+    ═══════════════════════════ */
+    function onManualFormInput() {
+      if (!currentConfirmedData) return;
+
+      var category = document.getElementById('formCategory').value.trim();
+      var cls = document.getElementById('formClass').value.trim();
+      var subjectA = document.getElementById('formSubject').value.trim();
+      var periodA = document.getElementById('formPeriodA').value.trim();
+      var subjectB = document.getElementById('formSubjectB').value.trim();
+      var periodB = document.getElementById('formPeriodB').value.trim();
+      var teacherA = document.getElementById('formTeacherA').value.trim();
+      var teacherB = document.getElementById('formTeacherB').value.trim();
+      var reason = document.getElementById('reasonSelect').value;
+
+      currentConfirmedData.reason = reason;
+      if (teacherA) currentConfirmedData.teacherA = teacherA;
+      if (teacherB) currentConfirmedData.teacherB = teacherB;
+      if (periodA) currentConfirmedData.periodA = parseInt(periodA) || currentConfirmedData.periodA;
+      if (periodB) currentConfirmedData.periodB = parseInt(periodB) || currentConfirmedData.periodB;
+
+      if (cls || subjectA) {
+        var oldParsed = splitSubjClass(currentConfirmedData.classA);
+        currentConfirmedData.classA = (subjectA || oldParsed.subj) + "-" + (cls || oldParsed.cls);
+      }
+      if (cls || subjectB) {
+        var oldParsedB = splitSubjClass(currentConfirmedData.classB);
+        currentConfirmedData.classB = (subjectB || oldParsedB.subj) + "-" + (cls || oldParsedB.cls);
+      }
+
+      renderOfficialPdfPlan(currentConfirmedData, category, cls, subjectA, periodA, subjectB, periodB);
+    }
+
+    /* ═══════════════════════════
+       2. 조건 검색 API 호출
+    ═══════════════════════════ */
+    function searchSchedule() {
+      var teacher = document.getElementById('teacher').value.trim();
+      var day = document.getElementById('day').value;
+      var targetDate = document.getElementById('targetDate').value;
+      var period = parseInt(document.getElementById('period').value);
+      var consecutiveLimit = parseInt(document.getElementById('consecutiveLimit').value);
+      var isSwap = document.getElementById('chkSwap').checked;
+      var isSub = document.getElementById('chkSubstitute').checked;
+      var subTargetTeacher = document.getElementById('subTargetTeacher').value.trim();
+
+      if (!teacher) { alert("기준 교사명을 입력해주세요."); return; }
+      if (!isSwap && !isSub) { alert("수업 교체 또는 보강 탐색 중 하나 이상을 선택해주세요."); return; }
+      if (!GB.scheduleList.length) { alert("시간표 데이터를 불러오는 중입니다. 잠시 후 다시 시도해주세요."); return; }
+
+      document.getElementById('initialPlaceholder').style.display = 'block';
+      document.getElementById('initialPlaceholder').innerHTML = "<div class='icon'>⏳</div><p>시간표 검증 및 가능 여부 계산 중...</p>";
+      document.getElementById('resultSummaryBar').style.display = 'none';
+      document.getElementById('resultTableArea').style.display = 'none';
+      document.getElementById('diffCard').classList.remove('show');
+      document.getElementById('confirmationCard').classList.remove('show');
+
+      try {
+        var res = searchScheduleLocal(GB.scheduleIndex, GB.scheduleList, GB.allTeachers,
+          teacher, day, period, consecutiveLimit, isSwap, isSub, subTargetTeacher);
+        renderSearchResults(res);
+      } catch (err) {
+        document.getElementById('initialPlaceholder').innerHTML = "<div class='icon'>⚠️</div><p style='color:red;'>오류 발생: " + escapeHtml(err.message) + "</p>";
+      }
+    }
+
+    /* [수정] 후보 행을 DOM API로 생성 (교사명의 따옴표/특수문자로 인한 onclick 깨짐 방지) */
+    function appendCandidateRow(tbody, cells, btnLabel, btnClass, onSelect) {
+      var tr = document.createElement('tr');
+      cells.forEach(function(c) {
+        var td = document.createElement('td');
+        if (c.html) td.innerHTML = c.html;
+        else td.textContent = c.text;
+        tr.appendChild(td);
+      });
+      var tdBtn = document.createElement('td');
+      var btn = document.createElement('button');
+      btn.className = btnClass;
+      btn.textContent = btnLabel;
+      btn.addEventListener('click', function() { onSelect(btn); });
+      tdBtn.appendChild(btn);
+      tr.appendChild(tdBtn);
+      tbody.appendChild(tr);
+    }
+
+    function renderSearchResults(res) {
+      document.getElementById('initialPlaceholder').style.display = 'none';
+      if (!res.success) {
+        alert("⚠️ " + res.message);
+        document.getElementById('initialPlaceholder').style.display = 'block';
+        document.getElementById('initialPlaceholder').innerHTML = "<div class='icon'>😢</div><p>" + escapeHtml(res.message) + "</p>";
+        return;
+      }
+
+      var targetDate = document.getElementById('targetDate').value;
+      var summaryBar = document.getElementById('resultSummaryBar');
+      summaryBar.style.display = 'flex';
+
+      var tTeacher = res.targetTeacher || document.getElementById('teacher').value.trim();
+      var tDay = res.targetDay || document.getElementById('day').value;
+      var tPeriod = res.targetPeriod || document.getElementById('period').value;
+      var tClass = res.targetClass || res.targetClassName || '';
+
+      document.getElementById('summaryTargetText').textContent =
+        tTeacher + "T | " + targetDate + " (" + tDay + ") " + tPeriod + "교시" + (tClass ? " [" + tClass + "]" : "");
+
+      var tbody = document.getElementById('candidatesTbody');
+      tbody.innerHTML = '';
+      var totalCount = 0;
+
+      if (res.swapData && res.swapData.length > 0) {
+        res.swapData.forEach(function(item) {
+          totalCount++;
+          var dateB = getDateForDay(targetDate, item.dayB);
+          var classB = item.classNameB || item.classB || tClass;
+          var teacherBName = item.teacherB || item.teacher;
+          var catBadge = item.categoryB ? " <span class='badge' style='background:var(--gray-200); color:var(--gray-700); font-size:10px;'>" + escapeHtml(item.categoryB) + "</span>" : "";
+          appendCandidateRow(tbody, [
+            { html: "<span style='color:var(--primary); font-weight:700;'>🔄 맞교환</span>" },
+            { html: escapeHtml(teacherBName + " 선생님") + catBadge },
+            { text: dateB + " (" + item.dayB + ") " + item.periodB + "교시" },
+            { text: classB }
+          ], '선택', 'btn btn-warning btn-sm', function(btn) {
+            selectSwapCandidate(
+              tTeacher, tDay, tPeriod,
+              teacherBName, item.dayB, item.periodB,
+              targetDate, dateB, tClass, classB, btn);
+          });
+        });
+      }
+
+      if (res.substituteData && res.substituteData.length > 0) {
+        res.substituteData.forEach(function(item) {
+          totalCount++;
+          var subTeacher = item.teacher || item.teacherB;
+          var catBadge = item.isSameSubject
+            ? " <span class='badge' style='background:#7c3aed; color:white; font-size:10px;'>★동일교과(" + escapeHtml(item.category || '') + ")</span>"
+            : (item.category ? " <span class='badge' style='background:var(--gray-200); color:var(--gray-700); font-size:10px;'>" + escapeHtml(item.category) + "</span>" : "");
+          appendCandidateRow(tbody, [
+            { html: "<span style='color:var(--success); font-weight:700;'>📋 보강</span>" },
+            { html: escapeHtml(subTeacher + " 선생님") + catBadge },
+            { text: targetDate + " (" + tDay + ") " + tPeriod + "교시" },
+            { text: "공강 배정 가능" }
+          ], '선택', 'btn btn-success btn-sm', function(btn) {
+            selectSubCandidate(
+              tTeacher, subTeacher, tDay,
+              tPeriod, tClass, targetDate, btn);
+          });
+        });
+      }
+
+      document.getElementById('candidateBadgeCount').textContent = "총 " + totalCount + "건 탐색됨";
+      document.getElementById('resultTableArea').style.display = totalCount > 0 ? 'block' : 'none';
+
+      if (totalCount === 0) {
+        document.getElementById('initialPlaceholder').style.display = 'block';
+        document.getElementById('initialPlaceholder').innerHTML = "<div class='icon'>😢</div><p>조건에 맞는 교체나 보강 가능한 선생님이 없습니다.</p>";
+      }
+    }
+
+    /* ═══════════════════════════
+       3. 긴급 회의 (공동 공강) 탐색 API 호출
+    ═══════════════════════════ */
+    function findCommonFreeTime() {
+      var teacherInput = document.getElementById('meetingTeachers').value.trim();
+      if (!teacherInput) {
+        alert("회의에 참석할 교사명을 입력해 주세요. (예: 유재, 홍길, 김철)");
+        return;
+      }
+
+      var teacherList = teacherInput.split(',').map(function(t) { return t.trim(); }).filter(Boolean);
+      if (teacherList.length < 2) {
+        alert("공동 공강을 찾기 위해 최소 2명 이상의 교사명을 입력해 주세요.");
+        return;
+      }
+      if (!GB.scheduleList.length) { alert("시간표 데이터를 불러오는 중입니다. 잠시 후 다시 시도해주세요."); return; }
+
+      document.getElementById('initialPlaceholder').style.display = 'block';
+      document.getElementById('initialPlaceholder').innerHTML = "<div class='icon'>⏳</div><p>" + escapeHtml(teacherList.join(', ')) + " 선생님들의 공강 시간을 비교 분석 중...</p>";
+      document.getElementById('resultSummaryBar').style.display = 'none';
+      document.getElementById('resultTableArea').style.display = 'none';
+      document.getElementById('diffCard').classList.remove('show');
+      document.getElementById('confirmationCard').classList.remove('show');
+
+      try {
+        var res = findCommonFreeTimeLocal(GB.scheduleIndex, teacherList);
+        renderCommonFreeTimeResults(res);
+      } catch (err) {
+        document.getElementById('initialPlaceholder').innerHTML = "<div class='icon'>⚠️</div><p style='color:red;'>오류 발생: " + escapeHtml(err.message) + "</p>";
+      }
+    }
+
+    function renderCommonFreeTimeResults(res) {
+      document.getElementById('initialPlaceholder').style.display = 'none';
+      if (!res.success) {
+        alert("⚠️ " + res.message);
+        document.getElementById('initialPlaceholder').style.display = 'block';
+        document.getElementById('initialPlaceholder').innerHTML = "<div class='icon'>😢</div><p>" + escapeHtml(res.message) + "</p>";
+        return;
+      }
+
+      var summaryBar = document.getElementById('resultSummaryBar');
+      summaryBar.style.display = 'flex';
+      document.getElementById('summaryTargetText').textContent =
+        "👥 참석 교사 (" + res.teachers.length + "명): " + res.teachers.join(', ');
+
+      var freeTimes = res.commonFreeTimes;
+      document.getElementById('candidateBadgeCount').textContent = "공동 공강 " + freeTimes.length + "개 교시 발견";
+
+      var tbody = document.getElementById('candidatesTbody');
+      tbody.innerHTML = '';
+
+      if (freeTimes.length === 0) {
+        document.getElementById('initialPlaceholder').style.display = 'block';
+        document.getElementById('initialPlaceholder').innerHTML = "<div class='icon'>😢</div><p>모든 참석 교사의 시간표가 일치하는 공동 공강 시간이 없습니다.</p>";
+        document.getElementById('resultTableArea').style.display = 'none';
+        return;
+      }
+
+      freeTimes.forEach(function(item) {
+        var tr = document.createElement('tr');
+
+        var td1 = document.createElement('td');
+        td1.innerHTML = "<span class='badge-free-time'>✨ 공동 공강</span>";
+
+        var td2 = document.createElement('td');
+        var bNames = document.createElement('b');
+        bNames.textContent = res.teachers.join(', ');
+        td2.appendChild(bNames);
+
+        var td3 = document.createElement('td');
+        var bWhen = document.createElement('b');
+        bWhen.textContent = item.day + "요일 " + item.period + "교시";
+        td3.appendChild(bWhen);
+
+        var td4 = document.createElement('td');
+        td4.innerHTML = "<span style='color:var(--success); font-weight:bold;'>모두 수업 없음 (회의 가능)</span>";
+
+        var td5 = document.createElement('td');
+        td5.textContent = "-";
+
+        [td1, td2, td3, td4, td5].forEach(function(td) { tr.appendChild(td); });
+        tbody.appendChild(tr);
+      });
+
+      document.getElementById('resultTableArea').style.display = 'block';
+    }
+
+    function selectSwapCandidate(teacherA, dayA, periodA, teacherB, dayB, periodB, dateA, dateB, classA, classB, btnEl) {
+      highlightSelectedRow(btnEl);
+      var reason = document.getElementById('reasonSelect').value;
+
+      currentConfirmedData = {
+        type: "수업교체",
+        reason: reason,
+        teacherA: teacherA,
+        dateA: dateA,
+        dayA: dayA,
+        periodA: parseInt(periodA),
+        classA: classA,
+        teacherB: teacherB,
+        dateB: dateB,
+        dayB: dayB,
+        periodB: parseInt(periodB),
+        classB: classB
+      };
+
+      var parsedA = splitSubjClass(classA);
+      var parsedB = splitSubjClass(classB);
+
+      document.getElementById('formCategory').value = deduceSubjectCategory(parsedA.subj);
+      document.getElementById('formClass').value = parsedA.cls;
+      document.getElementById('formSubject').value = parsedA.subj;
+      document.getElementById('formPeriodA').value = periodA;
+      document.getElementById('formSubjectB').value = parsedB.subj || parsedA.subj;
+      document.getElementById('formPeriodB').value = periodB;
+      document.getElementById('formTeacherA').value = teacherA;
+      document.getElementById('formTeacherB').value = teacherB;
+
+      document.getElementById('diffCard').classList.add('show');
+      document.getElementById('diffTypeBadge').textContent = "수업 1:1 맞교환";
+      document.getElementById('diffNameA').textContent = "👤 " + teacherA + " 선생님";
+      document.getElementById('diffDetailA').innerHTML =
+        "<b>[기존]</b> " + dateA + "(" + dayA + ") " + periodA + "교시 [" + escapeHtml(classA) + "]<br>" +
+        "<b>[변경]</b> " + dateB + "(" + dayB + ") " + periodB + "교시로 이동";
+
+      document.getElementById('diffNameB').textContent = "👤 " + teacherB + " 선생님";
+      document.getElementById('diffDetailB').innerHTML =
+        "<b>[기존]</b> " + dateB + "(" + dayB + ") " + periodB + "교시 [" + escapeHtml(classB) + "]<br>" +
+        "<b>[변경]</b> " + dateA + "(" + dayA + ") " + periodA + "교시로 이동";
+
+      renderOfficialPdfPlan(currentConfirmedData);
+    }
+
+    function selectSubCandidate(targetTeacher, subTeacher, day, period, className, targetDate, btnEl) {
+      highlightSelectedRow(btnEl);
+      var reason = document.getElementById('reasonSelect').value;
+
+      currentConfirmedData = {
+        type: "수업보강",
+        reason: reason,
+        teacherA: targetTeacher,
+        dateA: targetDate,
+        dayA: day,
+        periodA: parseInt(period),
+        classA: className,
+        teacherB: subTeacher,
+        dateB: targetDate,
+        dayB: day,
+        periodB: parseInt(period),
+        classB: "보강-" + className
+      };
+
+      var parsedA = splitSubjClass(className);
+      document.getElementById('formCategory').value = deduceSubjectCategory(parsedA.subj);
+      document.getElementById('formClass').value = parsedA.cls;
+      document.getElementById('formSubject').value = parsedA.subj;
+      document.getElementById('formPeriodA').value = period;
+      document.getElementById('formSubjectB').value = parsedA.subj;
+      document.getElementById('formPeriodB').value = period;
+      document.getElementById('formTeacherA').value = targetTeacher;
+      document.getElementById('formTeacherB').value = subTeacher;
+
+      document.getElementById('diffCard').classList.add('show');
+      document.getElementById('diffTypeBadge').textContent = "수업 보강 배정";
+      document.getElementById('diffNameA').textContent = "👤 결강: " + targetTeacher + " 선생님";
+      document.getElementById('diffDetailA').innerHTML =
+        targetDate + "(" + day + ") " + period + "교시 [" + escapeHtml(className) + "] 결강";
+
+      document.getElementById('diffNameB').textContent = "👤 보강: " + subTeacher + " 선생님";
+      document.getElementById('diffDetailB').innerHTML =
+        "해당 교시 공강 ➔ <b>[" + escapeHtml(className) + " 보강 배정]</b>";
+
+      renderOfficialPdfPlan(currentConfirmedData);
+    }
+
+    function highlightSelectedRow(btn) {
+      document.querySelectorAll('#candidatesTbody tr').forEach(function(r) { r.classList.remove('selected'); });
+      if (btn) btn.closest('tr').classList.add('selected');
+    }
+
+    /* ═══════════════════════════
+       4. 변동 시간표 시뮬레이션 비교 모달
+    ═══════════════════════════ */
+    function openSimulationModal() {
+      if (!currentConfirmedData) return;
+      var d = currentConfirmedData;
+
+      document.getElementById('simulationModal').classList.add('show');
+      document.getElementById('simModalContent').innerHTML = "<p style='text-align:center; padding:20px;'>⏳ 교체 전후 시간표 비교 데이터 계산 중...</p>";
+
+      try {
+        var res;
+        if (d.type === "수업교체") {
+          res = simulateSwapLocal(GB.scheduleList, d.teacherA, d.dayA, d.periodA, d.teacherB, d.dayB, d.periodB);
+          renderSwapSimulationGrid(res, d);
+        } else {
+          res = simulateSubstituteLocal(GB.scheduleList, d.teacherB, d.dayA, d.periodA, d.classA);
+          renderSubSimulationGrid(res, d);
+        }
+      } catch (err) {
+        document.getElementById('simModalContent').innerHTML = "<p style='color:red; text-align:center;'>" + escapeHtml(err.message) + "</p>";
+      }
+    }
+
+    function closeSimulationModal() {
+      document.getElementById('simulationModal').classList.remove('show');
+    }
+
+    function renderSwapSimulationGrid(res, d) {
+      var html = "<div class='flex-tables-grid'>";
+      html += "<div>";
+      html += "<h4 style='font-size:12px; margin-bottom:4px;'>👤 " + escapeHtml(d.teacherA) + "T 기존 시간표</h4>" + buildTimetableHTML(res.teacherA_orig);
+      html += "<h4 style='font-size:12px; margin:8px 0 4px; color:var(--primary);'>✨ " + escapeHtml(d.teacherA) + "T 교체 후 시간표</h4>" + buildTimetableHTML(res.teacherA_new, {day: d.dayB, period: d.periodB});
+      html += "</div>";
+
+      html += "<div>";
+      html += "<h4 style='font-size:12px; margin-bottom:4px;'>👤 " + escapeHtml(d.teacherB) + "T 기존 시간표</h4>" + buildTimetableHTML(res.teacherB_orig);
+      html += "<h4 style='font-size:12px; margin:8px 0 4px; color:var(--primary);'>✨ " + escapeHtml(d.teacherB) + "T 교체 후 시간표</h4>" + buildTimetableHTML(res.teacherB_new, {day: d.dayA, period: d.periodA});
+      html += "</div>";
+      html += "</div>";
+      document.getElementById('simModalContent').innerHTML = html;
+    }
+
+    function renderSubSimulationGrid(res, d) {
+      var html = "<div class='flex-tables-grid'>";
+      html += "<div>";
+      html += "<h4 style='font-size:12px; margin-bottom:4px;'>👤 " + escapeHtml(d.teacherB) + "T 기존 시간표 (보강 교사)</h4>" + buildTimetableHTML(res.teacher_orig);
+      html += "</div>";
+
+      html += "<div>";
+      html += "<h4 style='font-size:12px; margin-bottom:4px; color:var(--success);'>✨ " + escapeHtml(d.teacherB) + "T 보강 반영 시간표</h4>" + buildTimetableHTML(res.teacher_new, {day: d.dayA, period: d.periodA});
+      html += "</div>";
+      html += "</div>";
+      document.getElementById('simModalContent').innerHTML = html;
+    }
+
+    /* ═══════════════════════════
+       5. HWP 변환본 정밀 100% 매칭 PDF 렌더링
+    ═══════════════════════════ */
+    /* ═══════════════════════════
+       5. 학교 양식(HWPX 실측) 정밀 재현 계획서 렌더링
+       - 2026.hwpx 실측 반영: 19열 그리드(총 179.5mm), 굴림체 11pt,
+         제목 한컴바탕 15pt 볼드, 데이터 7행
+    ═══════════════════════════ */
+    function renderOfficialPdfPlan(data, customCategory, customClass, customSubjectA, customPeriodA, customSubjectB, customPeriodB) {
+      var isSwap = (data.type === "수업교체");
+      var shortDateA = formatShortDate(data.dateA);
+      var shortDateB = formatShortDate(data.dateB);
+      var parsedA = splitSubjClass(data.classA);
+      var parsedB = splitSubjClass(data.classB);
+
+      var category = customCategory || document.getElementById('formCategory').value.trim() || deduceSubjectCategory(parsedA.subj);
+      var cls = customClass || document.getElementById('formClass').value.trim() || parsedA.cls;
+      var subjectA = customSubjectA || document.getElementById('formSubject').value.trim() || parsedA.subj;
+      var periodA = customPeriodA || document.getElementById('formPeriodA').value.trim() || data.periodA;
+      var subjectB = customSubjectB || document.getElementById('formSubjectB').value.trim() || parsedB.subj || subjectA;
+      var periodB = customPeriodB || document.getElementById('formPeriodB').value.trim() || data.periodB;
+      var teacherA = document.getElementById('formTeacherA').value.trim() || data.teacherA;
+      var teacherB = document.getElementById('formTeacherB').value.trim() || data.teacherB;
+      var typeLabel = isSwap ? "교체" : "보강";
+
+      var html = "";
+
+      // 1. 결재란 (실측: 전체 42.8mm)
+      html += "<div class='plan-header-box'>";
+      html += "<table class='approval-table'>";
+      html += "<tr>";
+      html += "<th rowspan='2' class='side-title'>결<br>재</th>";
+      html += "<th class='app-title' style='width:17.30mm;'>교무부장</th>";
+      html += "<th class='app-title' style='width:16.64mm;'>교 감</th>";
+      html += "</tr>";
+      html += "<tr><td class='app-box'></td><td class='app-box'></td></tr>";
+      html += "</table>";
+      html += "</div>";
+
+      // 2. 문서 제목 (학교 양식原文: 한컴바탕 15pt 볼드)
+      html += "<div class='plan-doc-title'>수&nbsp;&nbsp;업 ( 교체ㆍ보강 )&nbsp;&nbsp;계&nbsp;&nbsp;획&nbsp;&nbsp;서</div>";
+
+      // 3. 서식 메인 표 (19열 그리드 실측, 총 179.5mm)
+      html += "<table class='pdf-form-table'>";
+      html += "<colgroup>";
+      html += "<col style='width:14.87mm;'>";
+      html += "<col style='width:4.66mm;'><col style='width:4.66mm;'><col style='width:4.66mm;'>";
+      html += "<col style='width:8.97mm;'>";
+      html += "<col style='width:13.97mm;'><col style='width:13.97mm;'>";
+      html += "<col style='width:15.97mm;'>";
+      html += "<col style='width:6.99mm;'><col style='width:6.99mm;'>";
+      html += "<col style='width:6.99mm;'><col style='width:6.99mm;'>";
+      html += "<col style='width:6.99mm;'><col style='width:6.99mm;'>";
+      html += "<col style='width:4.99mm;'><col style='width:4.99mm;'>";
+      html += "<col style='width:14.97mm;'><col style='width:14.97mm;'>";
+      html += "<col style='width:15.96mm;'>";
+      html += "</colgroup>";
+
+      // 1행: 교과 / 과목 / 담당교사 (12.5mm)
+      html += "<tr class='top-info-row'>";
+      html += "<th colspan='2' class='header-bg'>교 과</th><td colspan='4'>" + escapeHtml(category) + "</td>";
+      html += "<th colspan='3' class='header-bg'>과 목</th><td colspan='4'>" + escapeHtml(subjectA) + "</td>";
+      html += "<th colspan='4' class='header-bg'>담당 교사</th><td colspan='2'>" + escapeHtml(teacherA) + "</td>";
+      html += "</tr>";
+
+      // 2행: 결강 사유 / 일시 (12.5mm) — 학교 양식은 사유 셀도 가운데 정렬
+      html += "<tr class='top-info-row reason-row'>";
+      html += "<th colspan='3' class='header-bg'>결강 사유</th><td colspan='8'>" + escapeHtml(data.reason) + "</td>";
+      html += "<th colspan='4' class='header-bg'>일 시</th><td colspan='4'>" + shortDateA + "</td>";
+      html += "</tr>";
+
+      // 3행: 변경 전 / 구분(2행 병합) / 변경 후 (11.08mm)
+      html += "<tr class='section-header-row'>";
+      html += "<th colspan='8' class='sub-header'> 변경 전</th>";
+      html += "<th colspan='2' rowspan='2' class='sub-header gubun-cell'>구분</th>";
+      html += "<th colspan='9' class='sub-header'>변경 후</th>";
+      html += "</tr>";
+
+      // 4행: 컬럼 타이틀 (17.29mm)
+      html += "<tr class='col-title-row'>";
+      html += "<th>일자</th><th colspan='3'>학반</th><th>교시</th><th colspan='2'>과목</th><th>교사명</th>";
+      html += "<th colspan='2'>일자</th><th colspan='2'>학년반</th><th colspan='2'>교시</th><th colspan='2'>과목</th><th>교사명</th>";
+      html += "</tr>";
+
+      // 5~11행: 변동 데이터 7행 (학교 양식과 동일 — 첫 행에 현재 선택 내역, 나머지 빈 행)
+      if (isSwap) {
+        html += buildPlanDataRow(shortDateA, cls, periodA, subjectA, teacherA, typeLabel,
+                                 shortDateB, cls, periodB, subjectB, teacherB);
+      } else {
+        html += buildPlanDataRow(shortDateA, cls, periodA, subjectA, teacherA, typeLabel,
+                                 shortDateA, cls, periodA, subjectA, teacherB);
+      }
+      for (var i = 0; i < 6; i++) {
+        html += buildPlanDataRow("", "", "", "", "", "", "", "", "", "", "", "");
+      }
+
+      // 12행: 비고란 (8.51mm)
+      html += "<tr class='bottom-note-row'>";
+      html += "<td colspan='19'>&nbsp;보강 및 대체 보강시 수업자료 : 유인물, 활동지, 교과서 속 형성평가 등..</td>";
+      html += "</tr>";
+      html += "</table>";
+
+      // 4. 하단 각주 (한컴바탕 12pt)
+      html += "<div class='plan-doc-footer-note'>";
+      html += "※ 결강 기간과 보강, 교체내역에 따라 표를 적절히 편집하여 사용가능.";
+      html += "</div>";
+
+      document.getElementById('docPreviewBox').innerHTML = html;
+      document.getElementById('confirmationCard').classList.add('show');
+    }
+
+    /* 계획서 데이터 행 1개 생성 (학교 양식 19열 구조) */
+    function buildPlanDataRow(dA, cA, pA, sA, tA, typeLabel, dB, cB, pB, sB, tB) {
+      var h = "<tr class='data-row'>";
+      h += "<td>" + dA + "</td>";
+      h += "<td colspan='3'>" + escapeHtml(cA) + "</td>";
+      h += "<td>" + escapeHtml(pA) + "</td>";
+      h += "<td colspan='2'>" + escapeHtml(sA) + "</td>";
+      h += "<td>" + escapeHtml(tA) + "</td>";
+      h += "<td colspan='2' class='gubun-cell'>" + escapeHtml(typeLabel) + "</td>";
+      h += "<td colspan='2'>" + dB + "</td>";
+      h += "<td colspan='2'>" + escapeHtml(cB) + "</td>";
+      h += "<td colspan='2'>" + escapeHtml(pB) + "</td>";
+      h += "<td colspan='2'>" + escapeHtml(sB) + "</td>";
+      h += "<td>" + escapeHtml(tB) + "</td>";
+      h += "</tr>";
+      return h;
+    }
+
+    function copyFormText() {
+      if (!currentConfirmedData) return;
+      var d = currentConfirmedData;
+      var category = document.getElementById('formCategory').value.trim();
+      var cls = document.getElementById('formClass').value.trim();
+      var subjectA = document.getElementById('formSubject').value.trim();
+      var periodA = document.getElementById('formPeriodA').value.trim() || d.periodA;
+      var subjectB = document.getElementById('formSubjectB').value.trim();
+      var periodB = document.getElementById('formPeriodB').value.trim() || d.periodB;
+      var teacherA = document.getElementById('formTeacherA').value.trim() || d.teacherA;
+      var teacherB = document.getElementById('formTeacherB').value.trim() || d.teacherB;
+
+      var parsedA = splitSubjClass(d.classA);
+      var parsedB = splitSubjClass(d.classB);
+      var classStr = cls || parsedA.cls;
+      var text = "";
+
+      if (d.type === "수업교체") {
+        text = "📢 [수업(교체·보강) 계획서]\n" +
+               "▪ 교과/과목: " + (category || deduceSubjectCategory(parsedA.subj)) + " / " + (subjectA || parsedA.subj) + "\n" +
+               "▪ 담당 교사: " + teacherA + "T\n" +
+               "▪ 결강 사유: " + d.reason + "\n" +
+               "▪ 일 시: " + formatShortDate(d.dateA) + "(" + d.dayA + ")\n\n" +
+               "▪ [수업 교체 내용]\n" +
+               "  - 변경 전: " + formatShortDate(d.dateA) + " " + classStr + "반 " + periodA + "교시 (" + (subjectA || parsedA.subj) + ") " + teacherA + "T\n" +
+               "  - 변경 후: " + formatShortDate(d.dateB) + " " + classStr + "반 " + periodB + "교시 (" + (subjectB || parsedB.subj || subjectA) + ") " + teacherB + "T\n\n" +
+               "위와 같이 협의하여 수업 교체 계획서를 제출합니다.";
+      } else {
+        text = "📢 [수업(교체·보강) 계획서]\n" +
+               "▪ 담당 교사: " + teacherA + "T\n" +
+               "▪ 결강 사유: " + d.reason + "\n" +
+               "▪ 일 시: " + formatShortDate(d.dateA) + "(" + d.dayA + ")\n\n" +
+               "▪ [수업 보강 내용]\n" +
+               "  - 결강: " + formatShortDate(d.dateA) + " " + classStr + "반 " + periodA + "교시 " + teacherA + "T\n" +
+               "  - 보강: " + teacherB + "T 배정\n\n" +
+               "위와 같이 보강 계획서를 제출합니다.";
+      }
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function() {
+          alert("✅ 메신저용 텍스트가 복사되었습니다! (Ctrl+V로 붙여넣기)");
+        });
+      } else {
+        prompt("아래 텍스트를 복사하세요:", text);
+      }
+    }
+
+    function printDoc() {
+      window.print();
+    }
+
+    /* ═══════════════════════════
+       시간표 모달 및 음영/날짜 렌더링
+    ═══════════════════════════ */
+    function openTeacherModal() {
+      var teacher = document.getElementById('teacher').value.trim();
+      if (!teacher) { alert("기준 교사명을 입력해주세요."); return; }
+      if (!GB.scheduleList.length) { alert("시간표 데이터를 불러오는 중입니다. 잠시 후 다시 시도해주세요."); return; }
+
+      document.getElementById('teacherModal').classList.add('show');
+      document.getElementById('modalTitle').textContent = "📊 " + teacher + " 선생님 전체 시간표";
+      var res = getTeacherTimetableLocal(GB.scheduleList, teacher);
+      if (res.success) {
+        document.getElementById('modalTimetableArea').innerHTML = buildTimetableHTML(res.timetable, null);
+      } else {
+        document.getElementById('modalTimetableArea').innerHTML = "<p style='color:red; text-align:center;'>" + escapeHtml(res.message) + "</p>";
+      }
+    }
+
+    function closeTeacherModal() {
+      document.getElementById('teacherModal').classList.remove('show');
+    }
+
+    /* [GitHub 정적 버전] 대장 기능 제외 → 변경 이력 표시 없음 */
+    function buildTimetableHTML(ttData, highlight) {
+      var days = ["월", "화", "수", "목", "금"];
+      var html = "<div class='tt-wrap'><table class='tt-table'>";
+      html += "<tr><th>교시</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th></tr>";
+
+      for (var p = 1; p <= 7; p++) {
+        html += "<tr><td>" + p + "</td>";
+        days.forEach(function(d) {
+          var rawText = (ttData[d] && ttData[d][p]) ? ttData[d][p] : "-";
+
+          var cellClass = "";
+          if (highlight && highlight.day === d && highlight.period === p) {
+            cellClass = "class='highlight-changed'";
+          }
+
+          var cellContent = "-";
+          if (rawText !== "-") {
+            var parts = rawText.split("-");
+            cellContent = "<span class='subj-name'>" + escapeHtml(parts[0]) + "</span>" +
+                          (parts.length >= 2 ? "<span class='room-name'>" + escapeHtml(parts.slice(1).join("-")) + "</span>" : "");
+          }
+
+          html += "<td " + cellClass + ">" + cellContent + "</td>";
+        });
+        html += "</tr>";
+      }
+      html += "</table></div>";
+      return html;
+    }
+
+  
+    /* ═══════════════════════════
+       HWPX 계획서 파일 생성 및 다운로드 (v2)
+    ═══════════════════════════ */
+    var HWPX_TEMPLATE_BASE64 = "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";
+
+    function xmlEscape(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&apos;");
+    }
+
+    function makeHwpxP(text, align, bold, sizePt) {
+      var paraId = (align === 'center') ? '13' : (align === 'right' ? '14' : '15');
+      var charId = bold ? '13' : '12';
+      return '<hp:p id="0" paraPrIDRef="' + paraId + '" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">' +
+               '<hp:run charPrIDRef="' + charId + '"><hp:t>' + xmlEscape(text) + '</hp:t></hp:run>' +
+             '</hp:p>';
+    }
+
+    function makeHwpxCell(col, row, colSpan, rowSpan, widthHwp, text, isHeader, align) {
+      var alignVal = align || (isHeader ? 'center' : 'center');
+      var borderFillId = isHeader ? '3' : '2';
+      var bold = isHeader ? true : false;
+      return '<hp:tc borderFillIDRef="' + borderFillId + '" hasMargin="0">' +
+               '<hp:cellAddr colAddr="' + col + '" rowAddr="' + row + '" />' +
+               '<hp:cellSpan colSpan="' + colSpan + '" rowSpan="' + rowSpan + '" />' +
+               '<hp:cellSz width="' + widthHwp + '" height="1500" />' +
+               '<hp:subList id="" textDirection="HORIZONTAL" lineWrap="BREAK" vertAlign="CENTER">' +
+                 makeHwpxP(text, alignVal, bold, 10) +
+               '</hp:subList>' +
+             '</hp:tc>';
+    }
+
+    function buildHwpxSection0Xml(p) {
+      var colWidths = [4215, 1321, 1321, 1321, 2542, 3960, 3960, 4527, 1981, 1981, 1981, 1981, 1981, 1981, 1414, 1414, 4243, 4243, 4527];
+      function sumW(startCol, count) {
+        var s = 0;
+        for (var i = startCol; i < startCol + count; i++) s += colWidths[i];
+        return s;
+      }
+
+      var dataRows = (p.items && p.items.length > 0) ? p.items : [{
+        shortDateA: p.shortDateA,
+        cls: p.cls,
+        periodA: p.periodA,
+        subjectA: p.subjectA,
+        teacherA: p.teacherA,
+        typeLabel: p.typeLabel,
+        isSwap: p.isSwap,
+        shortDateB: p.shortDateB,
+        clsB: p.clsB || p.cls,
+        periodB: p.periodB,
+        subjectB: p.subjectB,
+        teacherB: p.teacherB
+      }];
+
+      var totalDataRows = Math.max(7, dataRows.length);
+      var totalRowCnt = 4 + totalDataRows + 1; // 4 헤더행 + 데이터행 + 1 비고행
+
+      var xml = '<?xml version="1.0" encoding="utf-8"?>\n' +
+        '<hs:sec xmlns:ha="http://www.hancom.co.kr/hwpml/2011/app" xmlns:hp="http://www.hancom.co.kr/hwpml/2011/paragraph" xmlns:hp10="http://www.hancom.co.kr/hwpml/2016/paragraph" xmlns:hs="http://www.hancom.co.kr/hwpml/2011/section" xmlns:hc="http://www.hancom.co.kr/hwpml/2011/core" xmlns:hh="http://www.hancom.co.kr/hwpml/2011/head">\n' +
+        '  <hp:p id="0" paraPrIDRef="15" styleIDRef="8" pageBreak="0" columnBreak="0" merged="0">\n' +
+        '    <hp:run charPrIDRef="0">\n' +
+        '      <hp:secPr id="" textDirection="HORIZONTAL" spaceColumns="1134" tabStop="8000" tabStopVal="4000" tabStopUnit="HWPUNIT" outlineShapeIDRef="0" memoShapeIDRef="0" textVerticalWidthHead="0" masterPageCnt="0">\n' +
+        '        <hp:grid lineGrid="0" charGrid="0" wonggojiFormat="0" />\n' +
+        '        <hp:startNum pageStartsOn="BOTH" page="0" pic="0" tbl="0" equation="0" />\n' +
+        '        <hp:visibility hideHeader="0" hideFooter="0" hideMasterPage="0" border="SHOW_ALL" fill="SHOW_ALL" hidePageNum="0" />\n' +
+        '        <hp:lineNumber restartType="NEW_PAGE" countBy="1" distance="1134" startNumber="1" />\n' +
+        '        <hp:pagePr width="59528" height="84188" autoSpaceEAsianEng="0" autoSpaceEAsianNum="0">\n' +
+        '          <hp:margin left="4252" right="4252" top="2834" bottom="2834" header="0" footer="0" gutter="0" />\n' +
+        '        </hp:pagePr>\n' +
+        '      </hp:secPr>\n' +
+        '    </hp:run>\n' +
+        '  </hp:p>\n';
+
+      // 1. 제목
+      xml += '  <hp:p id="1" paraPrIDRef="2" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">\n';
+      xml += '    <hp:run charPrIDRef="1"><hp:t>수업(교체ㆍ보강) 계획서</hp:t></hp:run>\n';
+      xml += '  </hp:p>\n';
+
+      xml += '  <hp:p id="2" paraPrIDRef="0" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">\n';
+      xml += '    <hp:run charPrIDRef="0">\n';
+      xml += '      <hp:tbl id="101" zOrder="0" numberingType="TABLE" textWrap="TOP_AND_BOTTOM" textFlow="BOTH_SIDES" lock="0" dropcapstyle="None" pageBreak="CELL" repeatHeader="0" rowCnt="2" colCnt="3" cellSpacing="0" borderFillIDRef="2" noAdjust="0">\n';
+      xml += '        <hp:sz width="12132" widthRelTo="ABSOLUTE" height="4970" heightRelTo="ABSOLUTE" protect="0" />\n';
+      xml += '        <hp:pos treatAsChar="1" affectLSpacing="0" flowWithText="1" allowOverlap="0" holdAnchorAndSO="0" vertRelTo="PARA" horzRelTo="COLUMN" vertAlign="TOP" horzAlign="RIGHT" vertOffset="0" horzOffset="0" />\n';
+      xml += '        <hp:tr>\n';
+      xml += makeHwpxCell(0, 0, 1, 1, 4044, '교무', true);
+      xml += makeHwpxCell(1, 0, 1, 1, 4044, '교감', true);
+      xml += makeHwpxCell(2, 0, 1, 1, 4044, '교장', true);
+      xml += '        </hp:tr>\n';
+      xml += '        <hp:tr>\n';
+      xml += makeHwpxCell(0, 1, 1, 1, 4044, '', false);
+      xml += makeHwpxCell(1, 1, 1, 1, 4044, '', false);
+      xml += makeHwpxCell(2, 1, 1, 1, 4044, '', false);
+      xml += '        </hp:tr>\n';
+      xml += '      </hp:tbl>\n';
+      xml += '    </hp:run>\n';
+      xml += '  </hp:p>\n';
+
+      // 2. 본문 대장 표
+      xml += '  <hp:p id="3" paraPrIDRef="15" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">\n';
+      xml += '    <hp:run charPrIDRef="0">\n';
+      xml += '      <hp:tbl id="102" zOrder="0" numberingType="TABLE" textWrap="TOP_AND_BOTTOM" textFlow="BOTH_SIDES" lock="0" dropcapstyle="None" pageBreak="CELL" repeatHeader="1" rowCnt="' + totalRowCnt + '" colCnt="19" cellSpacing="0" borderFillIDRef="2" noAdjust="0">\n';
+      xml += '        <hp:sz width="50880" widthRelTo="ABSOLUTE" height="35000" heightRelTo="ABSOLUTE" protect="0" />\n';
+      xml += '        <hp:pos treatAsChar="1" affectLSpacing="0" flowWithText="1" allowOverlap="0" holdAnchorAndSO="0" vertRelTo="PARA" horzRelTo="COLUMN" vertAlign="TOP" horzAlign="CENTER" vertOffset="0" horzOffset="0" />\n';
+
+      // 1행: 교과 / 과목 / 담당교사
+      xml += '        <hp:tr>\n';
+      xml += makeHwpxCell(0, 0, 2, 1, sumW(0, 2), '교 과', true);
+      xml += makeHwpxCell(2, 0, 4, 1, sumW(2, 4), p.category || '', false);
+      xml += makeHwpxCell(6, 0, 3, 1, sumW(6, 3), '과 목', true);
+      xml += makeHwpxCell(9, 0, 4, 1, sumW(9, 4), p.subjectA || '', false);
+      xml += makeHwpxCell(13, 0, 4, 1, sumW(13, 4), '담당 교사', true);
+      xml += makeHwpxCell(17, 0, 2, 1, sumW(17, 2), p.teacherA || '', false);
+      xml += '        </hp:tr>\n';
+
+      // 2행: 결강사유 / 일시
+      xml += '        <hp:tr>\n';
+      xml += makeHwpxCell(0, 1, 3, 1, sumW(0, 3), '결강 사유', true);
+      xml += makeHwpxCell(3, 1, 8, 1, sumW(3, 8), p.reason || '', false);
+      xml += makeHwpxCell(11, 1, 4, 1, sumW(11, 4), '일 시', true);
+      xml += makeHwpxCell(15, 1, 4, 1, sumW(15, 4), p.shortDateA || '', false);
+      xml += '        </hp:tr>\n';
+
+      // 3행: 대분류 헤더
+      xml += '        <hp:tr>\n';
+      xml += makeHwpxCell(0, 2, 8, 1, sumW(0, 8), '결 강 내 용', true);
+      xml += makeHwpxCell(8, 2, 2, 1, sumW(8, 2), '구 분', true);
+      xml += makeHwpxCell(10, 2, 9, 1, sumW(10, 9), '보 강 및 교 체 내 용', true);
+      xml += '        </hp:tr>\n';
+
+      // 4행: 세부 헤더
+      xml += '        <hp:tr>\n';
+      xml += makeHwpxCell(0, 3, 1, 1, colWidths[0], '일시', true);
+      xml += makeHwpxCell(1, 3, 3, 1, sumW(1, 3), '학급', true);
+      xml += makeHwpxCell(4, 3, 1, 1, colWidths[4], '교시', true);
+      xml += makeHwpxCell(5, 3, 2, 1, sumW(5, 2), '과목', true);
+      xml += makeHwpxCell(7, 3, 1, 1, colWidths[7], '교사', true);
+      xml += makeHwpxCell(8, 3, 2, 1, sumW(8, 2), '구분', true);
+      xml += makeHwpxCell(10, 3, 2, 1, sumW(10, 2), '일시', true);
+      xml += makeHwpxCell(12, 3, 2, 1, sumW(12, 2), '학급', true);
+      xml += makeHwpxCell(14, 3, 2, 1, sumW(14, 2), '교시', true);
+      xml += makeHwpxCell(16, 3, 2, 1, sumW(16, 2), '과목', true);
+      xml += makeHwpxCell(18, 3, 1, 1, colWidths[18], '교사', true);
+      xml += '        </hp:tr>\n';
+
+      // 5행 ~ 데이터 행들
+      for (var i = 0; i < totalDataRows; i++) {
+        var r = 4 + i;
+        xml += '        <hp:tr>\n';
+        if (i < dataRows.length) {
+          var item = dataRows[i];
+          var itemSwap = (item.isSwap || item.typeLabel === '교체' || item.typeLabel === '수업교체');
+          xml += makeHwpxCell(0, r, 1, 1, colWidths[0], item.shortDateA || '', false);
+          xml += makeHwpxCell(1, r, 3, 1, sumW(1, 3), item.cls || '', false);
+          xml += makeHwpxCell(4, r, 1, 1, colWidths[4], item.periodA ? String(item.periodA) : '', false);
+          xml += makeHwpxCell(5, r, 2, 1, sumW(5, 2), item.subjectA || '', false);
+          xml += makeHwpxCell(7, r, 1, 1, colWidths[7], item.teacherA || p.teacherA || '', false);
+          xml += makeHwpxCell(8, r, 2, 1, sumW(8, 2), item.typeLabel || (itemSwap ? '교체' : '보강'), true);
+          if (itemSwap) {
+            xml += makeHwpxCell(10, r, 2, 1, sumW(10, 2), item.shortDateB || item.shortDateA || '', false);
+            xml += makeHwpxCell(12, r, 2, 1, sumW(12, 2), item.clsB || item.cls || '', false);
+            xml += makeHwpxCell(14, r, 2, 1, sumW(14, 2), item.periodB ? String(item.periodB) : '', false);
+            xml += makeHwpxCell(16, r, 2, 1, sumW(16, 2), item.subjectB || '', false);
+            xml += makeHwpxCell(18, r, 1, 1, colWidths[18], item.teacherB || '', false);
+          } else {
+            xml += makeHwpxCell(10, r, 2, 1, sumW(10, 2), item.shortDateB || item.shortDateA || '', false);
+            xml += makeHwpxCell(12, r, 2, 1, sumW(12, 2), item.clsB || item.cls || '', false);
+            xml += makeHwpxCell(14, r, 2, 1, sumW(14, 2), item.periodB ? String(item.periodB) : (item.periodA ? String(item.periodA) : ''), false);
+            xml += makeHwpxCell(16, r, 2, 1, sumW(16, 2), item.subjectB || item.subjectA || '', false);
+            xml += makeHwpxCell(18, r, 1, 1, colWidths[18], item.teacherB || '', false);
+          }
+        } else {
+          xml += makeHwpxCell(0, r, 1, 1, colWidths[0], '', false);
+          xml += makeHwpxCell(1, r, 3, 1, sumW(1, 3), '', false);
+          xml += makeHwpxCell(4, r, 1, 1, colWidths[4], '', false);
+          xml += makeHwpxCell(5, r, 2, 1, sumW(5, 2), '', false);
+          xml += makeHwpxCell(7, r, 1, 1, colWidths[7], '', false);
+          xml += makeHwpxCell(8, r, 2, 1, sumW(8, 2), '', false);
+          xml += makeHwpxCell(10, r, 2, 1, sumW(10, 2), '', false);
+          xml += makeHwpxCell(12, r, 2, 1, sumW(12, 2), '', false);
+          xml += makeHwpxCell(14, r, 2, 1, sumW(14, 2), '', false);
+          xml += makeHwpxCell(16, r, 2, 1, sumW(16, 2), '', false);
+          xml += makeHwpxCell(18, r, 1, 1, colWidths[18], '', false);
+        }
+        xml += '        </hp:tr>\n';
+      }
+
+      // 비고란 (마지막 행)
+      var remarkRow = 4 + totalDataRows;
+      xml += '        <hp:tr>\n';
+      xml += makeHwpxCell(0, remarkRow, 19, 1, 50880, '보강 및 대체 보강시 수업자료 : 유인물, 활동지, 교과서 속 형성평가 등..', false, 'left');
+      xml += '        </hp:tr>\n';
+
+      xml += '      </hp:tbl>\n';
+      xml += '    </hp:run>\n';
+      xml += '  </hp:p>\n';
+
+      // 4. 하단 각주
+      xml += '  <hp:p id="5" paraPrIDRef="15" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">\n';
+      xml += '    <hp:run charPrIDRef="12"><hp:t>※ 결강 기간과 보강, 교체내역에 따라 표를 적절히 편집하여 사용가능.</hp:t></hp:run>\n';
+      xml += '  </hp:p>\n';
+      xml += '</hs:sec>';
+
+      return xml;
+    }
+
+    function downloadHwpxFromSection0(section0Xml, fileName, btn, defaultBtnText) {
+      if (typeof JSZip === 'undefined') {
+        alert("HWPX 생성 라이브러리(JSZip)를 로드하는 중입니다. 인터넷 연결을 확인하거나 잠시 후 다시 시도해 주세요.");
+        if (btn) { btn.disabled = false; btn.innerText = defaultBtnText; }
+        return;
+      }
+      var zip = new JSZip();
+      zip.loadAsync(HWPX_TEMPLATE_BASE64, { base64: true }).then(function(loadedZip) {
+        loadedZip.file("Contents/section0.xml", section0Xml);
+        return loadedZip.generateAsync({ type: "blob", mimeType: "application/hwp+zip" });
+      }).then(function(blob) {
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement("a");
+        a.href = url;
+        a.download = fileName;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        if (btn) { btn.disabled = false; btn.innerText = defaultBtnText; }
+      }).catch(function(err) {
+        alert("HWPX 파일 생성 중 오류가 발생했습니다: " + err.message);
+        if (btn) { btn.disabled = false; btn.innerText = defaultBtnText; }
+      });
+    }
+
+    function downloadHwpx() {
+      if (!currentConfirmedData) {
+        alert("먼저 교체 또는 보강 후보를 선택하여 계획서를 생성해주세요.");
+        return;
+      }
+      if (typeof JSZip === "undefined") {
+        alert("HWPX 생성 라이브러리(JSZip)를 로드하는 중입니다. 인터넷 연결을 확인하거나 잠시 후 다시 시도해 주세요.");
+        return;
+      }
+
+      var btn = document.getElementById('btnDownloadHwpx');
+      if (btn) {
+        btn.disabled = true;
+        btn.innerText = "⏳ 생성중...";
+      }
+
+      try {
+        var d = currentConfirmedData;
+        var isSwap = (d.type === "수업교체");
+        var parsedA = splitSubjClass(d.classA);
+        var parsedB = splitSubjClass(d.classB);
+
+        var category = document.getElementById('formCategory').value.trim() || deduceSubjectCategory(parsedA.subj);
+        var cls = document.getElementById('formClass').value.trim() || parsedA.cls;
+        var subjectA = document.getElementById('formSubject').value.trim() || parsedA.subj;
+        var periodA = document.getElementById('formPeriodA').value.trim() || d.periodA;
+        var subjectB = document.getElementById('formSubjectB').value.trim() || parsedB.subj || subjectA;
+        var periodB = document.getElementById('formPeriodB').value.trim() || d.periodB;
+        var teacherA = document.getElementById('formTeacherA').value.trim() || d.teacherA;
+        var teacherB = document.getElementById('formTeacherB').value.trim() || d.teacherB;
+        var shortDateA = formatShortDate(d.dateA);
+        var shortDateB = formatShortDate(d.dateB);
+        var typeLabel = isSwap ? "교체" : "보강";
+        var reason = d.reason || document.getElementById('reasonSelect').value;
+
+        var section0Xml = buildHwpxSection0Xml({
+          category: category,
+          subjectA: subjectA,
+          teacherA: teacherA,
+          reason: reason,
+          shortDateA: shortDateA,
+          shortDateB: shortDateB,
+          typeLabel: typeLabel,
+          cls: cls,
+          periodA: periodA,
+          subjectB: subjectB,
+          periodB: periodB,
+          teacherB: teacherB,
+          isSwap: isSwap
+        });
+
+        var fileName = "수업(" + typeLabel + ")계획서_" + teacherA + "T_" + (d.dateA || "") + ".hwpx";
+        downloadHwpxFromSection0(section0Xml, fileName, btn, "📥 HWPX 다운로드");
+
+      } catch (e) {
+        alert("오류 발생: " + e.message);
+        if (btn) {
+          btn.disabled = false;
+          btn.innerText = "📥 HWPX 다운로드";
+        }
+      }
+    }
+
+  
+    /* ═══════════════════════════════════════════════════════════════════
+       출장·연가 일괄 결보강 모드 클라이언트 로직 (Trip Mode Controller)
+       - 시작일 ~ 종료일 달력 직접 선택
+       - 1순위 수업 교체(맞교환/다음주) + 2순위 보강 자동 폴백
+       - 브라우저 캐시 대비 인라인 안전 폴백 내장
+    ═══════════════════════════════════════════════════════════════════ */
+
+    // ── [안전 가드] engine.js 캐시 불일치 대비 인라인 폴백 함수 ──
+    if (typeof getTripLessonsForDates === 'undefined') {
+      window.getTripLessonsForDates = function(scheduleList, targetTeacher, dateList) {
+        var lessons = [];
+        var idCounter = 1;
+        dateList.forEach(function(dObj) {
+          var dayLessons = scheduleList.filter(function(s) {
+            return s.teacher === targetTeacher && s.day === dObj.day;
+          });
+          dayLessons.sort(function(a, b) { return a.period - b.period; });
+          dayLessons.forEach(function(l) {
+            var parsed = splitClassName(l.className);
+            var pureCls = l.pureClass || parsed.cls || l.className;
+            var subj = parsed.subj || l.className;
+            var cat = deduceSubjectCategory(l.className || subj);
+            lessons.push({
+              id: 'trip_lesson_' + (idCounter++),
+              date: dObj.date,
+              day: dObj.day,
+              shortDate: dObj.shortDate || dObj.date,
+              period: l.period,
+              className: l.className,
+              pureClass: pureCls,
+              subject: subj,
+              category: cat,
+              targetTeacher: targetTeacher
+            });
+          });
+        });
+        return lessons;
+      };
+    }
+
+    if (typeof analyzeClassContinuity === 'undefined') {
+      window.analyzeClassContinuity = function(scheduleIndex, allTeachers, tripLessons) {
+        var classStats = {};
+        tripLessons.forEach(function(l) {
+          if (!classStats[l.pureClass]) {
+            classStats[l.pureClass] = { total: 0, lessons: [], teacherAvailableCounts: {} };
+          }
+          classStats[l.pureClass].total++;
+          classStats[l.pureClass].lessons.push(l);
+        });
+        Object.keys(classStats).forEach(function(cls) {
+          var cInfo = classStats[cls];
+          allTeachers.forEach(function(tName) {
+            var freeCount = 0;
+            cInfo.lessons.forEach(function(l) {
+              if (isTeacherFree(scheduleIndex, tName, l.day, l.period)) freeCount++;
+            });
+            cInfo.teacherAvailableCounts[tName] = freeCount;
+          });
+        });
+        return classStats;
+      };
+    }
+
+    if (typeof getTripSwapCandidatesForLesson === 'undefined') {
+      window.getTripSwapCandidatesForLesson = function(scheduleIndex, scheduleList, lesson, tripDateStrings, allowNextWeek, assignedSlots, consecutiveLimit) {
+        var targetTeacher = lesson.targetTeacher;
+        var targetClass = lesson.pureClass;
+        var targetDateStr = lesson.date;
+        var targetDay = lesson.day;
+        var targetPeriod = lesson.period;
+
+        var curDate = new Date(targetDateStr + 'T00:00:00');
+        var dow = curDate.getDay();
+        var monday = new Date(curDate);
+        monday.setDate(curDate.getDate() - (dow - 1));
+
+        var dayNames = ["", "월", "화", "수", "목", "금"];
+        var candidateDates = [];
+
+        for (var d = 1; d <= 5; d++) {
+          var cDate = new Date(monday);
+          cDate.setDate(monday.getDate() + (d - 1));
+          var yyyy = cDate.getFullYear();
+          var mm = String(cDate.getMonth() + 1).padStart(2, '0');
+          var dd = String(cDate.getDate()).padStart(2, '0');
+          var dStr = yyyy + '-' + mm + '-' + dd;
+          if (tripDateStrings.indexOf(dStr) === -1) {
+            candidateDates.push({
+              date: dStr,
+              day: dayNames[d],
+              shortDate: (cDate.getMonth() + 1) + '/' + cDate.getDate(),
+              isNextWeek: false
+            });
+          }
+        }
+
+        if (allowNextWeek) {
+          var nextMonday = new Date(monday);
+          nextMonday.setDate(monday.getDate() + 7);
+          for (var d = 1; d <= 5; d++) {
+            var cDate = new Date(nextMonday);
+            cDate.setDate(nextMonday.getDate() + (d - 1));
+            var yyyy = cDate.getFullYear();
+            var mm = String(cDate.getMonth() + 1).padStart(2, '0');
+            var dd = String(cDate.getDate()).padStart(2, '0');
+            var dStr = yyyy + '-' + mm + '-' + dd;
+            candidateDates.push({
+              date: dStr,
+              day: dayNames[d],
+              shortDate: (cDate.getMonth() + 1) + '/' + cDate.getDate(),
+              isNextWeek: true
+            });
+          }
+        }
+
+        var swapCandidates = [];
+        candidateDates.forEach(function(candDateObj) {
+          var dayB = candDateObj.day;
+          var dateB = candDateObj.date;
+
+          var matchingLessons = scheduleList.filter(function(s) {
+            var pCls = s.pureClass || splitClassName(s.className).cls || s.className;
+            return pCls === targetClass && s.teacher !== targetTeacher && s.day === dayB;
+          });
+
+          matchingLessons.forEach(function(lessonB) {
+            var teacherB = lessonB.teacher;
+            var periodB = lessonB.period;
+
+            if (!isTeacherFree(scheduleIndex, teacherB, targetDay, targetPeriod)) return;
+            if (!isTeacherFree(scheduleIndex, targetTeacher, dayB, periodB)) return;
+
+            var slotA = targetDateStr + '_' + targetPeriod;
+            var slotB = dateB + '_' + periodB;
+            if (assignedSlots) {
+              if (assignedSlots[teacherB] && assignedSlots[teacherB][slotA]) return;
+              if (assignedSlots[targetTeacher] && assignedSlots[targetTeacher][slotB]) return;
+              if (assignedSlots[teacherB] && assignedSlots[teacherB][slotB]) return;
+            }
+
+            if (consecutiveLimit > 0) {
+              if (checkConsecutive(scheduleIndex, teacherB, targetDay, targetPeriod, dayB, periodB, consecutiveLimit)) return;
+              if (checkConsecutive(scheduleIndex, targetTeacher, dayB, periodB, targetDay, targetPeriod, consecutiveLimit)) return;
+            }
+
+            var parsedB = splitClassName(lessonB.className);
+            var subjB = parsedB.subj || lessonB.className;
+            var catB = deduceSubjectCategory(lessonB.className || subjB);
+
+            swapCandidates.push({
+              type: '수업교체',
+              teacherB: teacherB,
+              dateB: dateB,
+              dayB: dayB,
+              shortDateB: candDateObj.shortDate,
+              periodB: periodB,
+              subjectB: subjB,
+              categoryB: catB,
+              classNameB: lessonB.className,
+              isNextWeek: candDateObj.isNextWeek
+            });
+          });
+        });
+
+        swapCandidates.sort(function(a, b) {
+          if (a.isNextWeek !== b.isNextWeek) return a.isNextWeek ? 1 : -1;
+          if (a.dateB !== b.dateB) return a.dateB.localeCompare(b.dateB);
+          return a.periodB - b.periodB;
+        });
+
+        return swapCandidates;
+      };
+    }
+
+    if (typeof getTripCandidatesForLesson === 'undefined') {
+      window.getTripCandidatesForLesson = function(scheduleIndex, allTeachers, lesson, teacherSubjectMap, classStats, assignedSlots, currentAssignedCounts, currentAssignedToday, consecutiveLimit) {
+        var targetCategory = lesson.category;
+        var clsStat = classStats[lesson.pureClass] || { total: 1, teacherAvailableCounts: {} };
+        var candidates = [];
+
+        allTeachers.forEach(function(tName) {
+          if (tName === lesson.targetTeacher) return;
+          if (!isTeacherFree(scheduleIndex, tName, lesson.day, lesson.period)) return;
+
+          var slotKey = lesson.date + '_' + lesson.period;
+          if (assignedSlots && assignedSlots[tName] && assignedSlots[tName][slotKey]) return;
+
+          if (consecutiveLimit > 0 && checkConsecutive(scheduleIndex, tName, lesson.day, lesson.period, '', 0, consecutiveLimit)) {
+            return;
+          }
+
+          var tCategory = teacherSubjectMap[tName] || '교과';
+          var isSameSubject = (tCategory === targetCategory);
+          var classFreeCount = (clsStat.teacherAvailableCounts && clsStat.teacherAvailableCounts[tName]) || 0;
+          var isFullContinuity = (clsStat.total > 1 && classFreeCount === clsStat.total);
+          var isPartialContinuity = (clsStat.total > 1 && classFreeCount > 1);
+
+          var totalAssigned = (currentAssignedCounts && currentAssignedCounts[tName]) || 0;
+          var todayAssigned = (currentAssignedToday && currentAssignedToday[tName] && currentAssignedToday[tName][lesson.date]) || 0;
+
+          var score = 0;
+          if (isSameSubject) score += 100;
+          if (isFullContinuity) score += 60;
+          else if (isPartialContinuity) score += 30;
+
+          score -= (totalAssigned * 25);
+          if (todayAssigned === 1) score -= 40;
+          if (todayAssigned >= 2) score -= 200;
+
+          candidates.push({
+            teacher: tName,
+            category: tCategory,
+            isSameSubject: isSameSubject,
+            classFreeCount: classFreeCount,
+            classTotalLessons: clsStat.total,
+            isFullContinuity: isFullContinuity,
+            isPartialContinuity: isPartialContinuity,
+            totalAssigned: totalAssigned,
+            todayAssigned: todayAssigned,
+            score: score
+          });
+        });
+
+        candidates.sort(function(a, b) {
+          if (b.score !== a.score) return b.score - a.score;
+          return a.teacher.localeCompare(b.teacher, 'ko');
+        });
+
+        return candidates;
+      };
+    }
+
+    if (typeof autoAssignTripSubstitutes === 'undefined') {
+      window.autoAssignTripSubstitutes = function(scheduleIndex, scheduleList, allTeachers, tripLessons, teacherSubjectMap, consecutiveLimit, policy, allowNextWeek) {
+        if (typeof allowNextWeek === 'undefined') allowNextWeek = true;
+        if (!policy) policy = 'swap_first';
+
+        var classStats = analyzeClassContinuity(scheduleIndex, allTeachers, tripLessons);
+        var assignedSlots = {};
+        var currentAssignedCounts = {};
+        var currentAssignedToday = {};
+        var assignments = {};
+
+        var tripDateStrings = [];
+        tripLessons.forEach(function(l) {
+          if (tripDateStrings.indexOf(l.date) === -1) tripDateStrings.push(l.date);
+        });
+
+        var sortedLessons = tripLessons.slice().sort(function(a, b) {
+          var countA = (classStats[a.pureClass] && classStats[a.pureClass].total) || 1;
+          var countB = (classStats[b.pureClass] && classStats[b.pureClass].total) || 1;
+          if (countB !== countA) return countB - countA;
+          if (a.date !== b.date) return a.date.localeCompare(b.date);
+          return a.period - b.period;
+        });
+
+        if (policy === 'swap_first' || policy === 'swap_only') {
+          // 희소한 수업(교체 파트너가 적은 수업)을 먼저 매칭하여 교체 성공률을 100%로 극대화
+          var swapCountsMap = {};
+          tripLessons.forEach(function(l) {
+            var c = getTripSwapCandidatesForLesson(
+              scheduleIndex, scheduleList, l, tripDateStrings, allowNextWeek, {}, consecutiveLimit || 3
+            );
+            swapCountsMap[l.id] = c.length;
+          });
+
+          var swapSortedLessons = tripLessons.slice().sort(function(a, b) {
+            var cntA = swapCountsMap[a.id];
+            var cntB = swapCountsMap[b.id];
+            if (cntA === 0 && cntB > 0) return 1;
+            if (cntB === 0 && cntA > 0) return -1;
+            if (cntA !== cntB) return cntA - cntB;
+            return a.date.localeCompare(b.date);
+          });
+
+          swapSortedLessons.forEach(function(lesson) {
+            if (assignments[lesson.id]) return;
+            var swapCands = getTripSwapCandidatesForLesson(
+              scheduleIndex, scheduleList, lesson, tripDateStrings, allowNextWeek, assignedSlots, consecutiveLimit || 3
+            );
+            if (swapCands.length > 0) {
+              var bestSwap = swapCands[0];
+              assignments[lesson.id] = {
+                type: '수업교체',
+                teacherB: bestSwap.teacherB,
+                dateB: bestSwap.dateB,
+                dayB: bestSwap.dayB,
+                shortDateB: bestSwap.shortDateB,
+                periodB: bestSwap.periodB,
+                subjectB: bestSwap.subjectB,
+                categoryB: bestSwap.categoryB,
+                classNameB: bestSwap.classNameB,
+                isNextWeek: bestSwap.isNextWeek
+              };
+              var tA = lesson.targetTeacher;
+              var tB = bestSwap.teacherB;
+              if (!assignedSlots[tB]) assignedSlots[tB] = {};
+              if (!assignedSlots[tA]) assignedSlots[tA] = {};
+              assignedSlots[tB][lesson.date + '_' + lesson.period] = true;
+              assignedSlots[tA][bestSwap.dateB + '_' + bestSwap.periodB] = true;
+              assignedSlots[tB][bestSwap.dateB + '_' + bestSwap.periodB] = true;
+            }
+          });
+        }
+
+        if (policy === 'swap_first' || policy === 'sub_only') {
+          sortedLessons.forEach(function(lesson) {
+            if (assignments[lesson.id]) return;
+            var subCands = getTripCandidatesForLesson(
+              scheduleIndex, allTeachers, lesson, teacherSubjectMap, classStats,
+              assignedSlots, currentAssignedCounts, currentAssignedToday, consecutiveLimit || 3
+            );
+            if (subCands.length > 0) {
+              var bestSub = subCands[0];
+              var tName = bestSub.teacher;
+              assignments[lesson.id] = {
+                type: '수업보강',
+                teacherB: tName,
+                dateB: lesson.date,
+                dayB: lesson.day,
+                shortDateB: lesson.shortDate,
+                periodB: lesson.period,
+                subjectB: lesson.subject,
+                categoryB: bestSub.category,
+                isSameSubject: bestSub.isSameSubject
+              };
+              if (!assignedSlots[tName]) assignedSlots[tName] = {};
+              assignedSlots[tName][lesson.date + '_' + lesson.period] = true;
+              currentAssignedCounts[tName] = (currentAssignedCounts[tName] || 0) + 1;
+              if (!currentAssignedToday[tName]) currentAssignedToday[tName] = {};
+              currentAssignedToday[tName][lesson.date] = (currentAssignedToday[tName][lesson.date] || 0) + 1;
+            } else {
+              assignments[lesson.id] = null;
+            }
+          });
+        }
+
+        return {
+          success: true,
+          assignments: assignments,
+          assignedCounts: currentAssignedCounts,
+          assignedToday: currentAssignedToday,
+          classStats: classStats
+        };
+      };
+    }
+
+    var tripState = {
+      teacher: '',
+      startDate: '',
+      endDate: '',
+      reason: '출장으로 인한 수업교체 및 보강',
+      consecutiveLimit: 3,
+      policy: 'swap_first',
+      allowNextWeek: true,
+      lessons: [],
+      assignments: {},
+      classStats: {},
+      teacherSubjectMap: {},
+      dateList: []
+    };
+
+    function switchMainMode(mode) {
+      var tabSingle = document.getElementById('tabModeSingle');
+      var tabTrip = document.getElementById('tabModeTrip');
+      var layoutSingle = document.querySelector('.dashboard-layout');
+      var layoutTrip = document.getElementById('tripDashboardLayout');
+
+      if (mode === 'single') {
+        tabSingle.classList.add('active');
+        tabTrip.classList.remove('active');
+        if (layoutSingle) layoutSingle.style.display = 'grid';
+        if (layoutTrip) layoutTrip.style.display = 'none';
+      } else {
+        tabSingle.classList.remove('active');
+        tabTrip.classList.add('active');
+        if (layoutSingle) layoutSingle.style.display = 'none';
+        if (layoutTrip) layoutTrip.style.display = 'block';
+
+        var sTeacher = document.getElementById('teacher').value.trim();
+        var sDate = document.getElementById('targetDate').value;
+        var tTeacherInput = document.getElementById('tripTeacher');
+        var tDateInput = document.getElementById('tripStartDate');
+        var tEndDateInput = document.getElementById('tripEndDate');
+        if (tTeacherInput && !tTeacherInput.value && sTeacher) tTeacherInput.value = sTeacher;
+        if (tDateInput && !tDateInput.value && sDate) {
+          tDateInput.value = sDate;
+          if (tEndDateInput && !tEndDateInput.value) tEndDateInput.value = sDate;
+        }
+      }
+    }
+
+    function onTripStartDateChange(val) {
+      var endInput = document.getElementById('tripEndDate');
+      if (endInput && (!endInput.value || endInput.value < val)) {
+        endInput.value = val;
+      }
+    }
+
+    function getSchoolDatesBetween(startDateStr, endDateStr) {
+      var list = [];
+      var start = new Date(startDateStr + 'T00:00:00');
+      var end = new Date(endDateStr + 'T00:00:00');
+      var dayMap = { 1: "월", 2: "화", 3: "수", 4: "목", 5: "금" };
+
+      if (end < start) return list;
+
+      var cur = new Date(start);
+      while (cur <= end) {
+        var dow = cur.getDay(); // 0: 일, 6: 토
+        if (dow >= 1 && dow <= 5) {
+          var yyyy = cur.getFullYear();
+          var mm = String(cur.getMonth() + 1).padStart(2, '0');
+          var dd = String(cur.getDate()).padStart(2, '0');
+          list.push({
+            date: yyyy + '-' + mm + '-' + dd,
+            day: dayMap[dow],
+            shortDate: (cur.getMonth() + 1) + '/' + cur.getDate()
+          });
+        }
+        cur.setDate(cur.getDate() + 1);
+      }
+      return list;
+    }
+
+    function loadTripLessons() {
+      try {
+        var teacher = document.getElementById('tripTeacher').value.trim();
+        var startDate = document.getElementById('tripStartDate').value;
+        var endDate = document.getElementById('tripEndDate').value;
+        var reason = document.getElementById('tripReason').value;
+        var consec = parseInt(document.getElementById('tripConsecutiveLimit').value) || 0;
+        var policy = document.getElementById('tripPolicy').value || 'swap_first';
+        var allowNextWeek = document.getElementById('tripAllowNextWeek').checked;
+
+        if (!teacher) { alert("출장(결강) 교사명을 입력해주세요."); return; }
+        if (!startDate) { alert("출장 시작일을 선택해주세요."); return; }
+        if (!endDate) { alert("출장 종료일을 선택해주세요."); return; }
+        if (endDate < startDate) { alert("출장 종료일은 시작일 이후로 선택해주세요."); return; }
+
+        if (!GB.scheduleList || !GB.scheduleList.length) {
+          alert("시간표 데이터를 불러오는 중입니다. 잠시 후 다시 시도해주세요.");
+          return;
+        }
+
+        var dateList = getSchoolDatesBetween(startDate, endDate);
+        if (dateList.length === 0) {
+          alert("선택하신 기간(" + startDate + " ~ " + endDate + ")에 수업일(월~금)이 없습니다.");
+          return;
+        }
+
+        var lessons = getTripLessonsForDates(GB.scheduleList, teacher, dateList);
+        if (lessons.length === 0) {
+          alert("선택하신 기간(" + startDate + " ~ " + endDate + ", 수업일 " + dateList.length + "일간)에 '" + teacher + "' 선생님의 정규 수업이 없습니다.");
+          return;
+        }
+
+        tripState.teacher = teacher;
+        tripState.startDate = startDate;
+        tripState.endDate = endDate;
+        tripState.dateList = dateList;
+        tripState.reason = reason;
+        tripState.consecutiveLimit = consec;
+        tripState.policy = policy;
+        tripState.allowNextWeek = allowNextWeek;
+        tripState.lessons = lessons;
+        tripState.assignments = {};
+        tripState.teacherSubjectMap = buildTeacherSubjectMap(GB.scheduleList);
+        tripState.classStats = analyzeClassContinuity(GB.scheduleIndex, GB.allTeachers, lessons);
+
+        document.getElementById('tripInitialPlaceholder').style.display = 'none';
+        document.getElementById('tripResultArea').style.display = 'block';
+
+        document.getElementById('tripSummaryPeriod').textContent =
+          "출장 기간: " + startDate + " ~ " + endDate + " (수업일 " + dateList.length + "일)";
+        document.getElementById('tripSummaryTitle').textContent =
+          "👤 " + teacher + " 선생님의 출장 수업 (총 " + lessons.length + "차시)";
+
+        renderTripLessons();
+        updateTripWorkloadDisplay();
+      } catch (err) {
+        console.error("loadTripLessons error:", err);
+        alert("출장 수업을 불러오는 중 오류가 발생했습니다: " + err.message);
+      }
+    }
+
+    function renderTripLessons() {
+      try {
+        var tbody = document.getElementById('tripLessonsTbody');
+        tbody.innerHTML = '';
+
+        var assignedSlots = {};
+        var currentCounts = {};
+        var currentToday = {};
+
+        var tripDateStrings = (tripState.dateList || []).map(function(d) { return d.date; });
+
+        var swapAssignedCount = 0;
+        var subAssignedCount = 0;
+
+        tripState.lessons.forEach(function(l) {
+          var a = tripState.assignments[l.id];
+          if (a) {
+            if (a.type === '수업교체') {
+              swapAssignedCount++;
+              var tA = l.targetTeacher;
+              var tB = a.teacherB;
+              if (!assignedSlots[tB]) assignedSlots[tB] = {};
+              if (!assignedSlots[tA]) assignedSlots[tA] = {};
+              assignedSlots[tB][l.date + '_' + l.period] = true;
+              assignedSlots[tA][a.dateB + '_' + a.periodB] = true;
+              assignedSlots[tB][a.dateB + '_' + a.periodB] = true;
+            } else {
+              subAssignedCount++;
+              var t = a.teacherB;
+              if (!assignedSlots[t]) assignedSlots[t] = {};
+              assignedSlots[t][l.date + '_' + l.period] = true;
+              currentCounts[t] = (currentCounts[t] || 0) + 1;
+              if (!currentToday[t]) currentToday[t] = {};
+              currentToday[t][l.date] = (currentToday[t][l.date] || 0) + 1;
+            }
+          }
+        });
+
+        tripState.lessons.forEach(function(lesson) {
+          var currentAssign = tripState.assignments[lesson.id];
+
+          var swapCands = [];
+          try {
+            swapCands = getTripSwapCandidatesForLesson(
+              GB.scheduleIndex, GB.scheduleList, lesson, tripDateStrings,
+              tripState.allowNextWeek, assignedSlots, tripState.consecutiveLimit
+            );
+          } catch (e) {
+            console.warn("getTripSwapCandidatesForLesson error:", e);
+          }
+
+          var subCands = [];
+          try {
+            subCands = getTripCandidatesForLesson(
+              GB.scheduleIndex, GB.allTeachers, lesson, tripState.teacherSubjectMap,
+              tripState.classStats, assignedSlots, currentCounts, currentToday, tripState.consecutiveLimit
+            );
+          } catch (e) {
+            console.warn("getTripCandidatesForLesson error:", e);
+          }
+
+          var tr = document.createElement('tr');
+
+          // 열 1: 일시 / 교시
+          var tdDate = document.createElement('td');
+          tdDate.style.fontWeight = '700';
+          tdDate.innerHTML = lesson.shortDate + " (" + lesson.day + ") <span style='color:var(--primary); font-size:13px;'>" + lesson.period + "교시</span>";
+          tr.appendChild(tdDate);
+
+          // 열 2: 학급 및 과목
+          var tdClass = document.createElement('td');
+          var classLabel = lesson.pureClass ? (lesson.pureClass + "반") : (lesson.className || '공통');
+          tdClass.innerHTML = "<span class='badge' style='background:#e0e7ff; color:#3730a3; font-weight:700; margin-right:4px;'>" +
+            escapeHtml(classLabel) + "</span> " + escapeHtml(lesson.subject);
+          tr.appendChild(tdClass);
+
+          // 열 3: 수업 교체 / 보강 배정 셀렉트박스
+          var tdSelect = document.createElement('td');
+          var select = document.createElement('select');
+          select.className = 'trip-candidate-select';
+          select.dataset.lessonId = lesson.id;
+
+          var optDefault = document.createElement('option');
+          optDefault.value = '';
+          optDefault.textContent = '-- 배정 선택 (교체 ' + swapCands.length + '건 / 보강 ' + subCands.length + '명) --';
+          select.appendChild(optDefault);
+
+          var isMatched = false;
+
+          // 그룹 A: 🔄 수업 맞교환 후보 (1순위 권장)
+          if (swapCands.length > 0) {
+            var grpSwap = document.createElement('optgroup');
+            grpSwap.label = '🔄 수업 맞교환 후보 (1순위 권장)';
+            swapCands.forEach(function(c) {
+              var opt = document.createElement('option');
+              opt.value = ['SWAP', c.teacherB, c.dateB, c.dayB, c.periodB, c.subjectB, c.categoryB, c.isNextWeek ? '1' : '0', c.shortDateB].join('|');
+              var weekTag = c.isNextWeek ? '[교체/다음주] ' : '[교체] ';
+              opt.textContent = weekTag + c.teacherB + " (" + c.subjectB + ") ⇋ " + c.shortDateB + "(" + c.dayB + ") " + c.periodB + "교시 [" + (lesson.pureClass || '공통') + "반]";
+
+              if (currentAssign && currentAssign.type === '수업교체' &&
+                  currentAssign.teacherB === c.teacherB && currentAssign.dateB === c.dateB && currentAssign.periodB === c.periodB) {
+                opt.selected = true;
+                isMatched = true;
+              }
+              grpSwap.appendChild(opt);
+            });
+            select.appendChild(grpSwap);
+          }
+
+          // 그룹 B: 📋 공강 보강 후보 (2순위)
+          if (subCands.length > 0) {
+            var grpSub = document.createElement('optgroup');
+            grpSub.label = '📋 공강 보강 후보 (2순위)';
+            subCands.forEach(function(c) {
+              var opt = document.createElement('option');
+              opt.value = ['SUB', c.teacher, c.category, c.isSameSubject ? '1' : '0'].join('|');
+              var tagList = [];
+              if (c.isSameSubject) tagList.push("★동일교과");
+              if (c.isFullContinuity) tagList.push("👑" + (lesson.pureClass || '') + "반 전담");
+              tagList.push("누적 " + c.totalAssigned + "건");
+              if (c.todayAssigned >= 1) tagList.push("오늘 " + c.todayAssigned + "건");
+
+              opt.textContent = "[보강] " + c.teacher + " (" + c.category + ") [" + tagList.join(' | ') + "]";
+
+              if (currentAssign && currentAssign.type === '수업보강' && currentAssign.teacherB === c.teacher) {
+                opt.selected = true;
+                isMatched = true;
+              }
+              grpSub.appendChild(opt);
+            });
+            select.appendChild(grpSub);
+          }
+
+          if (currentAssign && !isMatched) {
+            var optCurr = document.createElement('option');
+            optCurr.value = 'CURRENT';
+            var currDesc = (currentAssign.type === '수업교체')
+              ? "🔄 [교체] " + currentAssign.teacherB + " (" + (currentAssign.shortDateB || currentAssign.dateB) + " " + currentAssign.periodB + "교시)"
+              : "📋 [보강] " + currentAssign.teacherB;
+            optCurr.textContent = currDesc + " (선택됨)";
+            optCurr.selected = true;
+            select.appendChild(optCurr);
+          }
+
+          select.addEventListener('change', function() {
+            onTripAssignSelectChange(lesson.id, this.value);
+          });
+
+          tdSelect.appendChild(select);
+          tr.appendChild(tdSelect);
+
+          // 열 4: 상태 배지 및 요약
+          var tdBadges = document.createElement('td');
+          if (currentAssign) {
+            if (currentAssign.type === '수업교체') {
+              var swapBadge = currentAssign.isNextWeek
+                ? "<span class='badge' style='background:#1d4ed8; color:white; font-size:10px; font-weight:700;'>🔄 교체(다음주)</span>"
+                : "<span class='badge' style='background:#2563eb; color:white; font-size:10px; font-weight:700;'>🔄 맞교환</span>";
+              var swapInfo = "<div style='font-size:11px; color:var(--gray-800); font-weight:600; margin-top:2px;'>" +
+                escapeHtml(currentAssign.teacherB) + "T ⇋ " + (currentAssign.shortDateB || currentAssign.dateB) + " " + currentAssign.periodB + "교시 (" + escapeHtml(currentAssign.subjectB || '') + ")</div>";
+              tdBadges.innerHTML = swapBadge + swapInfo;
+            } else {
+              var subBadge = "<span class='badge' style='background:#16a34a; color:white; font-size:10px; font-weight:700;'>📋 보강</span>";
+              var extraBadges = [];
+              var tCat = currentAssign.categoryB || tripState.teacherSubjectMap[currentAssign.teacherB] || '';
+              if (tCat === lesson.category) {
+                extraBadges.push("<span class='badge-purple'>★동일교과</span>");
+              }
+              var cStat = tripState.classStats[lesson.pureClass];
+              if (cStat && cStat.total > 1 && cStat.teacherAvailableCounts[currentAssign.teacherB] === cStat.total) {
+                extraBadges.push("<span class='badge-gold'>👑전담</span>");
+              }
+              var tTotal = currentCounts[currentAssign.teacherB] || 0;
+              extraBadges.push("<span class='badge-gray'>총 " + tTotal + "건</span>");
+              var tToday = (currentToday[currentAssign.teacherB] && currentToday[currentAssign.teacherB][lesson.date]) || 0;
+              if (tToday >= 2) {
+                extraBadges.push("<span class='badge-danger'>⚠️오늘 " + tToday + "건</span>");
+              }
+              tdBadges.innerHTML = subBadge + " <b style='font-size:11px;'>" + escapeHtml(currentAssign.teacherB) + "T</b> " + extraBadges.join(' ');
+            }
+          } else {
+            tdBadges.innerHTML = "<span class='badge' style='background:var(--gray-100); color:var(--gray-400); font-size:11px; border:1px dashed var(--gray-300);'>미배정</span>";
+          }
+          tr.appendChild(tdBadges);
+
+          tbody.appendChild(tr);
+        });
+
+        // 진행도 뱃지 업데이트
+        var progBadge = document.getElementById('tripProgressBadge');
+        var totalAssigned = swapAssignedCount + subAssignedCount;
+        var totalLessons = tripState.lessons.length;
+
+        var summaryText = "총 " + totalLessons + "차시 중 🔄 교체 " + swapAssignedCount + "건 + 📋 보강 " + subAssignedCount + "건 (" + totalAssigned + "/" + totalLessons + " 완료)";
+        progBadge.textContent = summaryText;
+
+        if (totalAssigned === totalLessons && totalLessons > 0) {
+          progBadge.style.background = '#dcfce7';
+          progBadge.style.color = '#15803d';
+        } else {
+          progBadge.style.background = '#e0e7ff';
+          progBadge.style.color = '#4338ca';
+        }
+      } catch (err) {
+        console.error("renderTripLessons error:", err);
+        alert("수업 목록을 화면에 그리는 중 오류가 발생했습니다: " + err.message);
+      }
+    }
+
+    function onTripAssignSelectChange(lessonId, rawValue) {
+      if (!rawValue || rawValue === 'CURRENT') {
+        if (!rawValue) delete tripState.assignments[lessonId];
+        renderTripLessons();
+        updateTripWorkloadDisplay();
+        return;
+      }
+
+      var parts = rawValue.split('|');
+      var prefix = parts[0];
+
+      if (prefix === 'SWAP') {
+        tripState.assignments[lessonId] = {
+          type: '수업교체',
+          teacherB: parts[1],
+          dateB: parts[2],
+          dayB: parts[3],
+          periodB: parseInt(parts[4]),
+          subjectB: parts[5],
+          categoryB: parts[6],
+          isNextWeek: (parts[7] === '1'),
+          shortDateB: parts[8]
+        };
+      } else if (prefix === 'SUB') {
+        var lesson = tripState.lessons.find(function(l) { return l.id === lessonId; });
+        tripState.assignments[lessonId] = {
+          type: '수업보강',
+          teacherB: parts[1],
+          dateB: lesson ? lesson.date : '',
+          dayB: lesson ? lesson.day : '',
+          shortDateB: lesson ? lesson.shortDate : '',
+          periodB: lesson ? lesson.period : 0,
+          subjectB: lesson ? lesson.subject : '',
+          categoryB: parts[2],
+          isSameSubject: (parts[3] === '1')
+        };
+      }
+
+      renderTripLessons();
+      updateTripWorkloadDisplay();
+    }
+
+    function runTripAutoAssign() {
+      try {
+        if (!tripState.lessons || !tripState.lessons.length) {
+          alert("먼저 출장 수업을 불러와주세요.");
+          return;
+        }
+
+        var policy = document.getElementById('tripPolicy').value || 'swap_first';
+        var allowNextWeek = document.getElementById('tripAllowNextWeek').checked;
+        tripState.policy = policy;
+        tripState.allowNextWeek = allowNextWeek;
+
+        var res = autoAssignTripSubstitutes(
+          GB.scheduleIndex, GB.scheduleList, GB.allTeachers, tripState.lessons,
+          tripState.teacherSubjectMap, tripState.consecutiveLimit, policy, allowNextWeek
+        );
+
+        tripState.assignments = res.assignments;
+        renderTripLessons();
+        updateTripWorkloadDisplay();
+
+        var swapCnt = 0;
+        var subCnt = 0;
+        Object.values(res.assignments).forEach(function(a) {
+          if (a) {
+            if (a.type === '수업교체') swapCnt++;
+            else if (a.type === '수업보강') subCnt++;
+          }
+        });
+
+        var total = tripState.lessons.length;
+        var msg = "⚡ 최적 자동 배정 완료!\n" +
+          "• 총 수업: " + total + "차시\n" +
+          "• 🔄 수업 맞교환: " + swapCnt + "건 (1순위 최우선 매칭)\n" +
+          "• 📋 공강 보강: " + subCnt + "건 (동일교과/전담/부하분산)";
+        alert(msg);
+      } catch (err) {
+        console.error("runTripAutoAssign error:", err);
+        alert("자동 배정 실행 중 오류가 발생했습니다: " + err.message);
+      }
+    }
+
+    function resetTripAssignments() {
+      if (!confirm("모든 수업의 교체 및 보강 배정을 초기화하시겠습니까?")) return;
+      tripState.assignments = {};
+      renderTripLessons();
+      updateTripWorkloadDisplay();
+    }
+
+    function updateTripWorkloadDisplay() {
+      var container = document.getElementById('tripWorkloadStats');
+      if (!container) return;
+
+      var teacherStats = {};
+
+      tripState.lessons.forEach(function(l) {
+        var a = tripState.assignments[l.id];
+        if (a && a.teacherB) {
+          var t = a.teacherB;
+          if (!teacherStats[t]) {
+            teacherStats[t] = { swap: 0, sub: 0, classes: [] };
+          }
+          if (a.type === '수업교체') teacherStats[t].swap++;
+          else teacherStats[t].sub++;
+
+          var clsName = l.pureClass ? (l.pureClass + "반") : (l.className || '공통');
+          if (teacherStats[t].classes.indexOf(clsName) === -1) {
+            teacherStats[t].classes.push(clsName);
+          }
+        }
+      });
+
+      var teacherNames = Object.keys(teacherStats);
+      if (teacherNames.length === 0) {
+        container.innerHTML = "<div style='font-size:12px; color:var(--gray-400); text-align:center; padding:20px;'>교체나 보강을 배정하면 현황이 표시됩니다.</div>";
+        return;
+      }
+
+      teacherNames.sort(function(a, b) {
+        var totalA = teacherStats[a].swap + teacherStats[a].sub;
+        var totalB = teacherStats[b].swap + teacherStats[b].sub;
+        return totalB - totalA;
+      });
+
+      var html = '';
+      teacherNames.forEach(function(t) {
+        var stat = teacherStats[t];
+        var total = stat.swap + stat.sub;
+        var cat = tripState.teacherSubjectMap[t] || '교과';
+        var isHeavy = (stat.sub >= 3 || total >= 4);
+        var clsStr = stat.classes.join(', ');
+
+        var badges = [];
+        if (stat.swap > 0) badges.push("<span class='badge' style='background:#2563eb; color:white; font-size:10px;'>교체 " + stat.swap + "건</span>");
+        if (stat.sub > 0) badges.push("<span class='badge " + (isHeavy ? "badge-danger" : "badge-purple") + "'>보강 " + stat.sub + "건</span>");
+
+        html += "<div class='workload-item" + (isHeavy ? " heavy" : "") + "'>" +
+          "<div>" +
+            "<b>" + escapeHtml(t) + " 선생님</b> <span style='font-size:11px; color:var(--gray-500);'>(" + escapeHtml(cat) + ")</span><br>" +
+            "<span style='font-size:10px; color:var(--gray-500);'>학급: " + escapeHtml(clsStr) + "</span>" +
+          "</div>" +
+          "<div style='display:flex; gap:4px;'>" +
+            badges.join('') +
+          "</div>" +
+        "</div>";
+      });
+
+      container.innerHTML = html;
+    }
+
+    function downloadTripHwpx() {
+      if (!tripState.lessons || !tripState.lessons.length) {
+        alert("먼저 출장 수업을 불러와주세요.");
+        return;
+      }
+
+      var unassigned = tripState.lessons.filter(function(l) { return !tripState.assignments[l.id]; });
+      if (unassigned.length > 0) {
+        if (!confirm("⚠️ 아직 교체나 보강이 배정되지 않은 수업이 " + unassigned.length + "건 있습니다.\n미배정된 항목을 비워둔 채 HWPX 문서를 다운로드하시겠습니까?")) {
+          return;
+        }
+      }
+
+      var btn = document.getElementById('btnDownloadTripHwpx');
+      if (btn) {
+        btn.disabled = true;
+        btn.innerText = "⏳ HWPX 생성 중...";
+      }
+
+      var items = tripState.lessons.map(function(l) {
+        var a = tripState.assignments[l.id];
+        if (a && a.type === '수업교체') {
+          return {
+            shortDateA: l.shortDate,
+            cls: l.pureClass || l.className,
+            periodA: l.period,
+            subjectA: l.subject,
+            teacherA: tripState.teacher,
+            typeLabel: '교체',
+            isSwap: true,
+            shortDateB: a.shortDateB || a.dateB,
+            clsB: l.pureClass || l.className,
+            periodB: a.periodB,
+            subjectB: a.subjectB || l.subject,
+            teacherB: a.teacherB
+          };
+        } else if (a && a.type === '수업보강') {
+          return {
+            shortDateA: l.shortDate,
+            cls: l.pureClass || l.className,
+            periodA: l.period,
+            subjectA: l.subject,
+            teacherA: tripState.teacher,
+            typeLabel: '보강',
+            isSwap: false,
+            shortDateB: l.shortDate,
+            clsB: l.pureClass || l.className,
+            periodB: l.period,
+            subjectB: l.subject,
+            teacherB: a.teacherB
+          };
+        } else {
+          return {
+            shortDateA: l.shortDate,
+            cls: l.pureClass || l.className,
+            periodA: l.period,
+            subjectA: l.subject,
+            teacherA: tripState.teacher,
+            typeLabel: '보강',
+            isSwap: false,
+            shortDateB: l.shortDate,
+            clsB: l.pureClass || l.className,
+            periodB: l.period,
+            subjectB: l.subject,
+            teacherB: ''
+          };
+        }
+      });
+
+      var dateList = tripState.dateList || [];
+      var firstDate = (dateList[0] && dateList[0].date) || tripState.startDate;
+      var lastDate = (dateList[dateList.length - 1] && dateList[dateList.length - 1].date) || tripState.endDate || tripState.startDate;
+      var dateRangeStr = firstDate + " ~ " + lastDate;
+
+      var p = {
+        teacherA: tripState.teacher,
+        reason: tripState.reason,
+        category: (tripState.lessons[0] && tripState.lessons[0].category) || '교과',
+        subjectA: (tripState.lessons[0] && tripState.lessons[0].subject) || '교과수업',
+        shortDateA: dateRangeStr,
+        items: items
+      };
+
+      var section0Xml = buildHwpxSection0Xml(p);
+      var fileName = "2026_출장결보강계획서_" + tripState.teacher + "T_" + firstDate + ".hwpx";
+
+      downloadHwpxFromSection0(section0Xml, fileName, btn, "📄 출장 결보강 계획서 다운로드 (HWPX)");
+    }
+
+  
+    /* ── 사용 설명서 모달 제어 ── */
+    function openHelpModal() {
+      const m = document.getElementById('helpModal');
+      if (m) m.classList.add('show');
+    }
+    function closeHelpModal() {
+      const m = document.getElementById('helpModal');
+      if (m) m.classList.remove('show');
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeHelpModal();
+      }
+    });
+
+  </script>
+
+  <!-- ── 📖 결보강 탐색기 사용 설명서 모달 ── -->
+  <div id="helpModal" class="modal-overlay" onclick="if(event.target===this) closeHelpModal()">
+    <div class="help-modal-card">
+      <div class="help-modal-header">
+        <h3>📖 결보강 탐색기 사용 설명서</h3>
+        <button class="btn btn-sm btn-white" onclick="closeHelpModal()" style="font-size:16px; padding:2px 8px; border:none; cursor:pointer;" title="닫기">✕</button>
+      </div>
+
+      <div class="help-modal-nav">
+        <a href="#help-sec-1" class="help-nav-chip">1. 탐색기란?</a>
+        <a href="#help-sec-2" class="help-nav-chip">2. 시간표 불러오기</a>
+        <a href="#help-sec-3" class="help-nav-chip">3. 화면 구성</a>
+        <a href="#help-sec-4" class="help-nav-chip">4. 단일 차시 탐색</a>
+        <a href="#help-sec-5" class="help-nav-chip">5. 출장 패키지 모드</a>
+        <a href="#help-sec-6" class="help-nav-chip">6. 결과 표 해석</a>
+        <a href="#help-sec-7" class="help-nav-chip">7. 내 시간표</a>
+        <a href="#help-sec-8" class="help-nav-chip">8. 시뮬레이션</a>
+        <a href="#help-sec-9" class="help-nav-chip">9. 파일 교체</a>
+        <a href="#help-sec-10" class="help-nav-chip">10. 자주 묻는 질문</a>
+        <a href="#help-sec-11" class="help-nav-chip">11. 한눈에 정리</a>
+      </div>
+
+      <div class="help-modal-body">
+        <div style="background:#f1f5f9; padding:12px 16px; border-radius:8px; margin-bottom:18px; font-size:12.5px;">
+          <strong>수업(교체·보강) 계획서 자동 탐색 도구</strong> | 대전동산중학교 표준 (GitHub Pages 정적 버전 v2)<br>
+          <span style="color:var(--gray-600);">이 설명서는 컴퓨터가 익숙하지 않은 선생님도 쉽게 따라하실 수 있도록 제작되었습니다. 결강·보강 업무가 처음이신 분도 순서대로 진행하시면 완벽하게 처리됩니다.</span>
+        </div>
+
+        <section id="help-sec-1" class="help-section">
+          <h2>1. 결보강 탐색기란?</h2>
+          <p>선생님이 출장·연가·병가 등으로 수업을 비우게 되었을 때, <strong>누가 그 수업을 대신 맡거나 맞바꿀 수 있는지 자동으로 찾아주는 도구</strong>입니다.</p>
+          <ul style="margin:6px 0 10px 20px;">
+            <li>시간표를 일일이 대조하지 않아도 됩니다.</li>
+            <li>공강인 선생님, 같은 과목 선생님을 우선으로 찾아줍니다.</li>
+            <li>찾은 결과를 바로 <strong>결보강 계획서(HWPX/PDF)</strong>로 출력할 수 있습니다.</li>
+          </ul>
+          <div class="help-callout-tip">
+            <strong>💡 용어 정리 (처음 보시는 분께)</strong>
+            <table class="help-table" style="margin-top:6px; background:white;">
+              <tr><th style="width:110px;">단어</th><th>뜻</th></tr>
+              <tr><td><strong>결강</strong></td><td>선생님이 자리를 비워서 원래 수업이 열리지 않는 것</td></tr>
+              <tr><td><strong>보강</strong></td><td>비는 수업을 다른 선생님이 대신 맡아 들어가는 것</td></tr>
+              <tr><td><strong>교체 (맞교환)</strong></td><td>두 선생님이 서로의 수업 시간을 맞바꾸어 진행하는 것 (학교 권장 1순위)</td></tr>
+              <tr><td><strong>공강</strong></td><td>선생님이 수업이 배정되지 않은 빈 시간</td></tr>
+              <tr><td><strong>시간표 파일</strong></td><td>전교사의 시간표가 들어 있는 기본 데이터 (timetable.csv)</td></tr>
+            </table>
+          </div>
+        </section>
+
+        <section id="help-sec-2" class="help-section">
+          <h2>2. 처음 열면: 시간표 불러오기</h2>
+          <p>탐색기를 열면 시간표가 자동으로 불러와집니다. 화면 상단의 상태 배너에 "✅ 시간표 데이터 준비 완료"가 나타나는지 확인하세요.</p>
+          <ul style="margin:6px 0 10px 20px;">
+            <li>시간표가 확인되면 바로 탐색을 시작할 수 있습니다.</li>
+            <li>시간표가 비어 있거나 "불러오기 실패"가 뜨면, 같은 폴더에 <code>timetable.csv</code> 파일이 있는지 확인하세요.</li>
+          </ul>
+          <div class="help-callout-tip">
+            💡 이 도구는 인터넷 외부 서버 없이, <strong>선생님의 브라우저 화면 안에서만 안전하게 동작</strong>합니다. 개인정보나 학교 시간표가 외부로 절대 전송되지 않습니다.
+          </div>
+        </section>
+
+        <section id="help-sec-3" class="help-section">
+          <h2>3. 화면 구성</h2>
+          <p>화면은 크게 두 가지 모드로 나뉩니다. 상단 탭을 눌러 언제든 자유롭게 전환할 수 있습니다.</p>
+          <table class="help-table">
+            <tr><th style="width:160px;">모드</th><th>언제 쓰나요?</th></tr>
+            <tr><td><strong>🔍 단일 차시 탐색</strong></td><td>하루 중 한두 시간만 비울 때 (예: 오늘 2~3교시만 출장 또는 연가)</td></tr>
+            <tr><td><strong>✈️ 출장·연가 패키지 모드</strong></td><td>며칠씩 자리를 비울 때 (예: 3일 출장, 일주일 연가로 여러 수업 일괄 처리)</td></tr>
+          </table>
+
+          <p style="margin-top:10px;">그 밖에 자주 쓰는 유용한 버튼들입니다.</p>
+          <table class="help-table">
+            <tr><th style="width:160px;">버튼</th><th>기능 설명</th></tr>
+            <tr><td><strong>📊 내 시간표</strong></td><td>특정 선생님의 일주일(월~금 1~7교시) 시간표를 한눈에 조회합니다.</td></tr>
+            <tr><td><strong>🔍 변동 시간표 시뮬레이션</strong></td><td>교체·보강을 적용했을 때 시간표가 어떻게 바뀌는지 전후를 미리 비교합니다.</td></tr>
+            <tr><td><strong>📋 메신저 복사</strong></td><td>결과를 교내 메신저나 카카오톡 단톡방에 붙여넣기 좋게 깔끔한 텍스트로 복사합니다.</td></tr>
+            <tr><td><strong>🖨️ 계획서 인쇄(PDF)</strong></td><td>대전동산중 공문 서식에 맞추어 바로 인쇄하거나 PDF로 저장합니다.</td></tr>
+            <tr><td><strong>📥 HWPX 다운로드</strong></td><td>한글(HWPX) 원본 파일로 내려받아 세부 내용을 다듬거나 전자결재에 첨부합니다.</td></tr>
+          </table>
+        </section>
+
+        <section id="help-sec-4" class="help-section">
+          <h2>4. 단일 차시 탐색하기 (한두 시간만 비울 때)</h2>
+          <div class="help-step-box">
+            <div class="help-step-title"><span class="help-step-badge">1단계</span> 기준 교사명을 입력합니다</div>
+            자리를 비우는 선생님의 이름을 입력합니다. (예: <code>권상명</code>)
+          </div>
+          <div class="help-step-box">
+            <div class="help-step-title"><span class="help-step-badge">2단계</span> 결강 사유를 선택합니다</div>
+            출장 / 연가 / 병가 / 공가 / 특별휴가 / 기타 중에서 선택합니다.
+          </div>
+          <div class="help-step-box">
+            <div class="help-step-title"><span class="help-step-badge">3단계</span> 결강 날짜와 교시를 정합니다</div>
+            1. <strong>결강/교체 일자</strong> 달력에서 날짜를 고르면 요일이 자동으로 연동됩니다.<br>
+            2. <strong>결강/교체 교시</strong>에서 비는 교시(1~7교시)를 누릅니다. (여러 교시 다중 선택 가능)
+          </div>
+          <div class="help-step-box">
+            <div class="help-step-title"><span class="help-step-badge">4단계</span> 탐색 옵션 설정 (선택 사항)</div>
+            - <strong>특정 보강 교사</strong>: "이 선생님께 부탁드리고 싶다"는 분이 있으면 이름을 직접 지정할 수 있습니다.<br>
+            - <strong>연속수업 방지</strong>: 앞뒤로 수업이 연달아 붙어 피로도가 가중되는 것을 방지합니다.
+          </div>
+          <div class="help-step-box">
+            <div class="help-step-title"><span class="help-step-badge">5단계</span> 결과 확인 및 최적 후보 선택</div>
+            후보는 <strong>1) 동일 교과군 우선</strong> → <strong>2) 공강 교사</strong> → <strong>3) 보강 누적 횟수가 적은 교사(부하 분산)</strong> 순으로 자동 정렬됩니다.
+          </div>
+          <div class="help-step-box">
+            <div class="help-step-title"><span class="help-step-badge">6단계</span> 계획서 출력</div>
+            <strong>🖨️ 계획서 인쇄(PDF)</strong> 또는 <strong>📥 HWPX 다운로드</strong> 버튼을 눌러 양식을 출력합니다.
+          </div>
+        </section>
+
+        <section id="help-sec-5" class="help-section">
+          <h2>5. 출장·연가 패키지 모드 (며칠씩 비울 때)</h2>
+          <p>2~3일 출장이나 일주일 연가처럼 <strong>기간 내 여러 차시 수업을 한 번에 일괄 처리</strong>할 때 사용합니다.</p>
+          <div class="help-step-box">
+            <div class="help-step-title"><span class="help-step-badge">1단계</span> 출장 정보 입력</div>
+            출장 교사명 입력 후, 달력에서 <strong>시작일</strong>과 <strong>종료일</strong>을 선택합니다.
+          </div>
+          <div class="help-step-box">
+            <div class="help-step-title"><span class="help-step-badge">2단계</span> 출장 수업 일괄 추출</div>
+            <strong>[출장 수업 불러오기]</strong> 버튼을 누르면 해당 기간 내 모든 수업 목록이 표로 정렬되어 나타납니다.
+          </div>
+          <div class="help-step-box">
+            <div class="help-step-title"><span class="help-step-badge">3단계</span> 원클릭 최적 자동 배정 (교체 1순위)</div>
+            <strong>[원클릭 최적 자동 배정]</strong>을 누르면 시스템이 스스로 다음 원칙에 따라 최적 매칭합니다:
+            <ul style="margin:4px 0 0 16px;">
+              <li><strong>수업 교체(1:1 맞교환) 1순위</strong>: 파트너가 희소한 차시부터 우선 매칭하여 성립률 100% 극대화</li>
+              <li>교체 불가 차시만 보강(2순위)으로 자동 전환</li>
+              <li>동일 학급 수업은 가능한 같은 선생님이 맡도록 연속성 보장</li>
+              <li>교사별 일일/누적 보강 부하 자동 분산</li>
+            </ul>
+          </div>
+          <div class="help-step-box">
+            <div class="help-step-title"><span class="help-step-badge">4단계</span> 1장 일괄 출력</div>
+            드롭다운에서 마음에 드는 후보로 언제든 변경할 수 있으며, <strong>[출장 계획서 HWPX 일괄 다운로드]</strong>를 누르면 1장의 결재 대장으로 즉시 생성됩니다.
+          </div>
+        </section>
+
+        <section id="help-sec-6" class="help-section">
+          <h2>6. 결과 표 보는 방법</h2>
+          <table class="help-table">
+            <tr><th style="width:130px;">표시</th><th>뜻과 추천 기준</th></tr>
+            <tr><td><span style="color:#2563eb; font-weight:700;">🔄 [교체]</span></td><td>서로 수업을 1:1로 맞바꾸는 형태 (학교 행정 권장 1순위)</td></tr>
+            <tr><td><span style="color:#059669; font-weight:700;">📋 [보강]</span></td><td>상대 교사가 빈 시간에 대신 들어가는 형태 (2순위)</td></tr>
+            <tr><td><strong>동일 교과</strong></td><td>결강 과목과 같은 과목군 선생님 (수업 연속성 최고)</td></tr>
+            <tr><td><strong>연속수업 주의</strong></td><td>앞뒤 시간에 이미 수업이 있어 2~3시간 연속 수업이 되는 경우</td></tr>
+            <tr><td><strong>누적 배정</strong></td><td>이번 출장 기간 동안 해당 선생님에게 배정된 총 차시 수</td></tr>
+          </table>
+        </section>
+
+        <section id="help-sec-7" class="help-section">
+          <h2>7. 내 시간표 보기</h2>
+          <p>특정 선생님의 주간 시간표가 궁금할 때 상단의 <strong>[📊 내 시간표]</strong> 버튼을 누르고 교사명을 입력하면 월~금 1~7교시 시간표를 한눈에 확인할 수 있습니다.</p>
+        </section>
+
+        <section id="help-sec-8" class="help-section">
+          <h2>8. 변동 시간표 시뮬레이션 비교</h2>
+          <p>"이렇게 교체하면 시간표가 어떻게 바뀔까?"를 확정하기 전에 미리 검증하는 기능입니다.</p>
+          <ul style="margin:6px 0 10px 20px;">
+            <li>후보를 선택한 후 <strong>[🔍 변동 시간표 시뮬레이션 비교]</strong>를 누릅니다.</li>
+            <li>변경 전 시간표와 변경 후 시간표가 나란히 비교되어 충돌 여부를 한눈에 점검할 수 있습니다.</li>
+            <li>화면 상의 가상 시뮬레이션이므로 실제 원본 데이터가 바뀌지 않으니 안심하고 테스트하세요.</li>
+          </ul>
+        </section>
+
+        <section id="help-sec-9" class="help-section">
+          <h2>9. 시간표 파일 교체하기 (새 학기/시간표 변동 시)</h2>
+          <p>시간표는 프로젝트 내 <code>timetable.csv</code> 파일 하나로 관리됩니다.</p>
+          <ol style="margin:6px 0 10px 20px;">
+            <li>우측 상단의 <strong>[📥 시간표 양식 다운로드]</strong>를 받아 엑셀에서 전체 선생님의 시간표를 작성합니다.</li>
+            <li>엑셀에서 <strong>[다른 이름으로 저장] → 파일 형식: CSV UTF-8</strong>로 저장합니다.</li>
+            <li>기존 <code>timetable.csv</code> 파일에 덮어쓰기(바꿔치기)한 뒤 웹 화면을 새로고침(F5)합니다.</li>
+          </ol>
+          <div class="help-callout-warn">
+            <strong>⚠️ 주의할 점</strong><br>
+            • 학급명은 반드시 <code>2-1</code>, <code>3-9</code>처럼 "학년-반" 형태로 기재해야 합니다.<br>
+            • 엑셀에서 <code>3-9</code>가 날짜(3월 9일)로 자동 변환되는 것을 방지하기 위해 텍스트 서식으로 입력하세요. (시스템 내 자동 복원 기능도 내장되어 있습니다.)
+          </div>
+        </section>
+
+        <section id="help-sec-10" class="help-section">
+          <h2>10. 자주 묻는 질문 (FAQ)</h2>
+          <div style="margin-bottom:12px;">
+            <strong style="color:#1e3a8a;">Q. 교체가 가능한 후보가 보이는데 자동 배정에서 보강으로 배정되었어요. 왜 그런가요?</strong><br>
+            <span>A. 다른 차시가 해당 교사의 공강 슬롯을 먼저 선점했거나, 출장 교사 본인의 복귀 후 시간표에 충돌이 발생하는 경우입니다. 본 시스템은 <strong>희소 교체 우선 알고리즘</strong>을 통해 전체 수업 중 교체 성립률을 극대화하도록 최적 배치합니다.</span>
+          </div>
+          <div style="margin-bottom:12px;">
+            <strong style="color:#1e3a8a;">Q. 계획서 인쇄 시 배경 색상이나 표 테두리가 나오지 않아요.</strong><br>
+            <span>A. 브라우저 인쇄 대화상자에서 <strong>[설정 더보기] → [배경 그래픽]</strong> 항목에 반드시 체크해 주세요. 여백은 <strong>'없음'</strong>으로 설정하시면 학교 표준 규격에 완벽히 들어맞습니다.</span>
+          </div>
+          <div style="margin-bottom:12px;">
+            <strong style="color:#1e3a8a;">Q. 한글(HWPX) 파일로 직접 편집하고 싶어요.</strong><br>
+            <span>A. <strong>[📥 HWPX 다운로드]</strong> 버튼을 누르시면 대전동산중 표준 19열 서식 및 학교장 명의가 반영된 온전한 .hwpx 파일이 다운로드됩니다. 한컴오피스에서 열어 결재를 올리시면 됩니다.</span>
+          </div>
+          <div style="margin-bottom:12px;">
+            <strong style="color:#1e3a8a;">Q. 데이터가 외부 인터넷에 유출되지 않나요?</strong><br>
+            <span>A. 전혀 유출되지 않습니다. 모든 연산과 시간표 검색은 선생님의 PC 브라우저 메모리 안에서만 100% 정적으로 처리됩니다.</span>
+          </div>
+        </section>
+
+        <section id="help-sec-11" class="help-section">
+          <h2>11. 한눈에 보는 요약</h2>
+          <table class="help-table">
+            <tr><th style="width:200px;">하고 싶은 일</th><th>실행 방법</th></tr>
+            <tr><td><strong>한두 시간만 대신 맡을 교사 찾기</strong></td><td>🔍 단일 차시 탐색 → 교사·날짜·교시 입력 → 탐색</td></tr>
+            <tr><td><strong>며칠 출장/연가 한 번에 정리하기</strong></td><td>✈️ 출장·연가 모드 → 교사·기간 입력 → 출장 수업 불러오기 → 자동 배정</td></tr>
+            <tr><td><strong>특정 선생님 시간표 확인</strong></td><td>📊 내 시간표 버튼 클릭 후 교사명 입력</td></tr>
+            <tr><td><strong>시간표 변경 사전 검증</strong></td><td>🔍 변동 시간표 시뮬레이션 비교 클릭</td></tr>
+            <tr><td><strong>결재용 계획서 출력</strong></td><td>🖨️ 계획서 인쇄(PDF) 또는 📥 HWPX 다운로드</td></tr>
+            <tr><td><strong>카카오톡/메신저 공유</strong></td><td>📋 메신저 복사 클릭 후 대화방에 붙여넣기</td></tr>
+            <tr><td><strong>새 학기 시간표 교체</strong></td><td>시간표 양식 다운로드 → 새 timetable.csv 저장 후 새로고침</td></tr>
+          </table>
+        </section>
+      </div>
+
+      <div class="help-modal-footer">
+        <span>💡 문의: 결보강 업무 담당 교사 | 대전동산중학교</span>
+        <button class="btn btn-sm btn-primary" onclick="closeHelpModal()">확인 및 닫기</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
