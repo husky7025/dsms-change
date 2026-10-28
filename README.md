@@ -7,13 +7,12 @@
 
 | 파일 | 설명 |
 |---|---|
-| `index.html` | 앱 본체 (UI + 구글 시트 실시간 동기화 + 탐색 결과 + HWPX 생성 + 계획서 인쇄) |
-| `engine.js` | 탐색 엔진 (시간표 파싱·교체/보강 탐색·공동공강·시뮬레이션) |
-| `timetable.csv` | 시간표 백업 데이터 (CSV, 오프라인 및 구글 시트 연결 실패 시 Fallback용) |
-| `timetable-sample.csv` | 시간표 양식 샘플 파일 |
+| `index.html` | 앱 본체 (UI + 시간표 내장 + 탐색 결과 + HWPX 생성 + 계획서 인쇄) |
+| `engine.js` | 탐색 엔진 (시간표 파싱·교체/보강 탐색·공동공강·연속수업 제한·시뮬레이션) |
+| `timetable.csv` | 동산중 정규 시간표 데이터 (UTF-8 BOM) |
 
 ## GitHub Pages 배포 방법
 
-1. 이 폴더의 파일들을 GitHub 새 저장소(예: `dongsan-ms-timetable`)에 push
+1. 이 폴더의 파일들을 GitHub 새 저장소에 push
 2. 저장소 Settings → Pages → Deploy from a branch → `main` / `/(root)` 선택 후 Save
 3. 1~2분 후 `https://<사용자명>.github.io/<저장소명>/` 으로 접속
