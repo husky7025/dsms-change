@@ -7,7 +7,7 @@
 
 | 파일 | 설명 |
 |---|---|
-| `index.html` | 앱 본체 (UI + 시간표 내장 + 탐색 결과 + HWPX 생성 + 계획서 인쇄) |
+| `index.html` | 앱 본체 (UI + 시간표 내장 + 탐색 결과 + 메신저 복사 + 교체 내역 + 전후 시간표 비교) |
 | `engine.js` | 탐색 엔진 (시간표 파싱·교체/보강 탐색·공동공강·연속수업 제한·시뮬레이션) |
 | `timetable.csv` | 동산중 정규 시간표 데이터 (UTF-8 BOM) |
 
@@ -16,3 +16,9 @@
 1. 이 폴더의 파일들을 GitHub 새 저장소에 push
 2. 저장소 Settings → Pages → Deploy from a branch → `main` / `/(root)` 선택 후 Save
 3. 1~2분 후 `https://<사용자명>.github.io/<저장소명>/` 으로 접속
+
+## 프로젝트 정보
+
+- 저장소: https://github.com/husky7025/dsms-change
+- 공개 주소: https://husky7025.github.io/dsms-change/
+- 계획서 미리보기·인쇄·HWPX 기능은 고등학교판과 달리 넣지 않습니다.
