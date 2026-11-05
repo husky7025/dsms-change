@@ -1207,7 +1207,7 @@
     </div>
   </div>
 
-  <script src="engine.js?v=20261105_ms_v3"></script>
+  <script src="engine.js?v=20261105_ms_v3b"></script>
   <script>
 /* ═══════════════════════════════════════════════════════════════
    데이터 레이어 (Google Sheets 실시간 연동 v2.0)
@@ -2723,7 +2723,7 @@ var dayMap = { 0: "일", 1: "월", 2: "화", 3: "수", 4: "목", 5: "금", 6: "�
 
       <div class="help-modal-body">
         <div style="background:#f1f5f9; padding:12px 16px; border-radius:8px; margin-bottom:18px; font-size:12.5px;">
-          <strong>결보강 시간표 자동 탐색 도구</strong> | 대전동산중학교 표준 (GitHub Pages 정적 버전 v2)<br>
+          <strong>결보강 시간표 자동 탐색 도구</strong> | 대전동산중학교 표준 (GitHub Pages 정적 버전 v3)<br>
           <span style="color:var(--gray-600);">이 설명서는 컴퓨터가 익숙하지 않은 선생님도 쉽게 따라하실 수 있도록 제작되었습니다. 결강·보강 업무가 처음이신 분도 순서대로 진행하시면 완벽하게 처리됩니다.</span>
         </div>
 
@@ -2753,7 +2753,7 @@ var dayMap = { 0: "일", 1: "월", 2: "화", 3: "수", 4: "목", 5: "금", 6: "�
           <p>탐색기를 열면 시간표가 자동으로 불러와집니다. 화면 상단의 상태 배너에 "✅ 시간표 데이터 준비 완료"가 나타나는지 확인하세요.</p>
           <ul style="margin:6px 0 10px 20px;">
             <li>시간표가 확인되면 바로 탐색을 시작할 수 있습니다.</li>
-            <li>시간표가 비어 있거나 "불러오기 실패"가 뜨면, 같은 폴더에 <code>timetable.csv</code> 파일이 있는지 확인하세요.</li>
+            <li>시간표가 비어 있거나 "불러오기 실패"가 뜨면, 상단의 <strong>🔄 시간표 새로고침</strong>을 눌러 다시 불러오세요.</li>
           </ul>
           <div class="help-callout-tip">
             💡 이 도구는 인터넷 외부 서버 없이, <strong>선생님의 브라우저 화면 안에서만 안전하게 동작</strong>합니다. 개인정보나 학교 시간표가 외부로 절대 전송되지 않습니다.
@@ -2800,7 +2800,7 @@ var dayMap = { 0: "일", 1: "월", 2: "화", 3: "수", 4: "목", 5: "금", 6: "�
           </div>
           <div class="help-step-box">
             <div class="help-step-title"><span class="help-step-badge">5단계</span> 결과 확인 및 최적 후보 선택</div>
-            후보는 <strong>1) 동일 교과군 우선</strong> → <strong>2) 공강 교사</strong> → <strong>3) 보강 누적 횟수가 적은 교사(부하 분산)</strong> 순으로 자동 정렬됩니다.
+            후보는 <strong>1) 동일 교과군 우선</strong> → <strong>2) 이름 가나다순</strong>으로 정렬됩니다. 후보에는 그 시간에 수업이 없는 교사만 나옵니다.
           </div>
           <div class="help-step-box">
             <div class="help-step-title"><span class="help-step-badge">6단계</span> 결과 공유</div>
@@ -2864,11 +2864,11 @@ var dayMap = { 0: "일", 1: "월", 2: "화", 3: "수", 4: "목", 5: "금", 6: "�
 
         <section id="help-sec-9" class="help-section">
           <h2>9. 시간표 파일 교체하기 (새 학기/시간표 변동 시)</h2>
-          <p>시간표는 프로젝트 내 <code>timetable.csv</code> 파일 하나로 관리됩니다.</p>
+          <p>시간표는 저장소의 <code>timetable.csv</code> 파일 하나로 관리됩니다.</p>
           <ol style="margin:6px 0 10px 20px;">
-            <li>우측 상단의 <strong>[📥 시간표 양식 다운로드]</strong>를 받아 엑셀에서 전체 선생님의 시간표를 작성합니다.</li>
+            <li>기존 시간표와 같은 칸 구성으로 전체 선생님의 시간표를 엑셀에서 작성합니다.</li>
             <li>엑셀에서 <strong>[다른 이름으로 저장] → 파일 형식: CSV UTF-8</strong>로 저장합니다.</li>
-            <li>기존 <code>timetable.csv</code> 파일에 덮어쓰기(바꿔치기)한 뒤 웹 화면을 새로고침(F5)합니다.</li>
+            <li>저장소의 <code>timetable.csv</code>를 새 파일로 바꾼 뒤 웹 화면을 새로고침(F5)합니다.</li>
           </ol>
           <div class="help-callout-warn">
             <strong>⚠️ 주의할 점</strong><br>

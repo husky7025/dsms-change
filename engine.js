@@ -452,6 +452,9 @@ function getTripSwapCandidatesForLesson(scheduleIndex, scheduleList, lesson, tri
 
   const dayNames = ["", "월", "화", "수", "목", "금"];
   const candidateDates = [];
+  const now = new Date();
+  // 이미 지난 날짜로는 수업을 옮길 수 없다
+  const todayStr = now.getFullYear() + '-' + String(now.getMonth() + 1).padStart(2, '0') + '-' + String(now.getDate()).padStart(2, '0');
 
   // 1) 같은 주의 출장 외 날짜 탐색
   for (let d = 1; d <= 5; d++) {
@@ -461,7 +464,7 @@ function getTripSwapCandidatesForLesson(scheduleIndex, scheduleList, lesson, tri
     const mm = String(cDate.getMonth() + 1).padStart(2, '0');
     const dd = String(cDate.getDate()).padStart(2, '0');
     const dStr = yyyy + '-' + mm + '-' + dd;
-    if (tripDateStrings.indexOf(dStr) === -1) {
+    if (tripDateStrings.indexOf(dStr) === -1 && dStr >= todayStr) {
       candidateDates.push({
         date: dStr,
         day: dayNames[d],
@@ -482,7 +485,7 @@ function getTripSwapCandidatesForLesson(scheduleIndex, scheduleList, lesson, tri
       const mm = String(cDate.getMonth() + 1).padStart(2, '0');
       const dd = String(cDate.getDate()).padStart(2, '0');
       const dStr = yyyy + '-' + mm + '-' + dd;
-      if (tripDateStrings.indexOf(dStr) !== -1) continue; // 다음 주도 출장일이면 제외
+      if (tripDateStrings.indexOf(dStr) !== -1 || dStr < todayStr) continue; // 출장일과 지난 날짜는 제외
       candidateDates.push({
         date: dStr,
         day: dayNames[d],
